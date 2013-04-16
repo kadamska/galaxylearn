@@ -1,0 +1,9 @@
+<div ng-controller="Era">
+<p>This is the partial for Era ID: {{eraId}}</p>
+<ul>
+    <li ng-repeat="story in stories">
+    <a href="#/story/{{story.id}}" >{{story.name}}</a>
+    </li>
+</ul>
+
+</div>
