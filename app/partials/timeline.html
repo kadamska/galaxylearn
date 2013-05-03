@@ -1,8 +1,5 @@
-<div ng-controller="Timeline">
-<p>This is the partial for Timeline.</p>
-<ul class="thumbnails" >
-    <li class="span1" ng-repeat="era in eras">
-    <a class="thumbnail" href="#/era/{{era.id}}" ><img src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg" alt=""  class="img-rounded"/></a>
+<ul class="thumbnails span10" >
+    <li class="span3" ng-repeat="era in eras">
+    <a class="thumbnail" href="#/era/{{era.id}}" ><img src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg" alt=""  class="img-rounded"/></a>{{era.name}}
     </li>
 </ul>
-</div>

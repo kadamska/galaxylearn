@@ -2,13 +2,20 @@
 
 /* Controllers */
 
-function Timeline($scope, $http) {
+function MainCtrl($scope, $http, $location) {
     $http.get('data/eras.json').success(function(data) {
             $scope.eras = data;
     });
 }
 
 function Era($scope, $routeParams, $http) {
+    $scope.eraId = $routeParams.eraId;
+    $http.get('data/era'+ $routeParams.eraId +'.json').success(function(data) {
+            $scope.stories = data;
+    });
+}
+
+function Timeline($scope, $routeParams, $http) {
     $scope.eraId = $routeParams.eraId;
     $http.get('data/era'+ $routeParams.eraId +'.json').success(function(data) {
             $scope.stories = data;

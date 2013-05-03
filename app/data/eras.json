@@ -1,9 +1,9 @@
 [
-        {"id": 1, "name": "hello"},
-        {"id": 2, "name": "bar"},
-        {"id": 3, "name": "bar"},
-        {"id": 4, "name": "bar"},
-        {"id": 5, "name": "bar"},
-        {"id": 6, "name": "bar"},
-        {"id": 7, "name": "bar"}
+        {"id": 1, "name": "Ancient Egypt"},
+        {"id": 2, "name": "Ancient Greece"},
+        {"id": 3, "name": "Medieval Europe"},
+        {"id": 4, "name": "Renaissance Europe"},
+        {"id": 5, "name": "American Revolution"},
+        {"id": 6, "name": "Nineteenth Century"},
+        {"id": 7, "name": "Modern Era"}
 ]
