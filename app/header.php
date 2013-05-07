@@ -23,11 +23,15 @@
       	 <ul class="nav nav-pills">
             <li><a href="index.php">Home</a></li>
             <li><a href="controlpanel.php">Control Panel</a></li>
-            <?php if (session_id()) { ?>
+            <?php if ($_SESSION['user_id']) { ?>
             <li><a href="workbench.php">Workbench</a></li>
             <?php } ?>
             <li><a href="about.php">About</a></li>
+            <?php if ($_SESSION['user_id']) { ?>
+            <li><a href="sign-out.php"><?=$_SESSION['email']?>(<small>Logout</small>)</a></li>
+            <?php } else { ?>
             <li><a href="sign-in.php">Login</a></li>
+            <?php } ?>
   			 </ul>
   		  </div>
       </div>

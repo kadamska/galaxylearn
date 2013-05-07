@@ -1,6 +1,7 @@
 <?php
 
 define("API_KEY", "Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C");
+define("OID", "$oid");
 
 /**
 * Basic wrapper for MongoLab data access. (@sammcafee, May '13)
