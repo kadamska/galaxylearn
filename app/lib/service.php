@@ -22,9 +22,12 @@ class DataService
 		$this->collection = $collection ."/";
 	}
 
-	function service_get() {
+	function service_get($query = NULL) {
 
-		$path = $this->URL . $this->database . $this->collection . $this->key;
+		$query = "&q=" . json_encode($query);
+
+		$path = $this->URL . $this->database . $this->collection . $this->key  . $query;
+		error_log("MongoLab call" . $path);
 
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      

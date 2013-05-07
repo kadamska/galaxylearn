@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"var_",
+				"var_dump"
+			],
+			[
+				"ch",
+				"changes"
+			],
+			[
+				"data",
+				"data_string"
+			],
+			[
+				"ar",
+				"arrayName"
+			],
+			[
+				"hr",
+				"hr"
+			],
+			[
+				"servi",
+				"service_get_one"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"js",
+				"json_decode"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"curl",
+				"curl_exec"
+			],
+			[
+				"ser",
+				"service_post"
+			],
+			[
+				"get_res",
+				"get_response_json"
+			],
+			[
+				"read",
+				"ready	$(document).ready"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/lib/service.php",
+			"settings":
+			{
+				"buffer_size": 4969,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controlpanel.php",
+			"settings":
+			{
+				"buffer_size": 82,
+				"line_ending": "Unix",
+				"name": "controlpanel.php"
+			}
+		},
+		{
+			"file": "app/test.php",
+			"settings":
+			{
+				"buffer_size": 1027,
+				"line_ending": "Unix",
+				"name": "test.php"
+			}
+		},
+		{
+			"file": "app/index.php",
+			"settings":
+			{
+				"buffer_size": 1972,
+				"line_ending": "Unix",
+				"name": "index.php"
+			}
+		},
+		{
+			"file": "app/sign-up.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/sign-in.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/css/app.css",
+			"settings":
+			{
+				"buffer_size": 534,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"snip im",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"js2",
+				"JS2Coffee: Convert & Make New File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set co",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sammcafee/Work/timemachinecode/app/lib/service.php",
+		"/Users/sammcafee/Work/timemachinecode/app/js/controllers.js",
+		"/Users/sammcafee/Work/galaxylearn/app/index.html",
+		"/Users/sammcafee/Dropbox/LUXr Redesign/code/haml/team.haml",
+		"/Users/sammcafee/Dropbox/LUXr Redesign/code/haml/interns.haml",
+		"/Users/sammcafee/Work/luxr/app/views/about/interns.haml",
+		"/Users/sammcafee/Work/luxr/app/controllers/about_controller.rb",
+		"/Users/sammcafee/Work/luxr/app/views/layouts/_header.haml",
+		"/Users/sammcafee/Work/luxr/app/views/about/contact.haml",
+		"/Users/sammcafee/Work/luxr/app/views/about/about.haml",
+		"/Users/sammcafee/Dropbox/LUXr Redesign/code/haml/contact.haml",
+		"/Users/sammcafee/Dropbox/LUXr Redesign/code/haml/about.haml",
+		"/Users/sammcafee/Dropbox/LUXr Redesign/code/about.html",
+		"/Users/sammcafee/Work/luxr/app/views/layouts/_head.haml",
+		"/Users/sammcafee/Work/luxr/app/assets/javascripts/plugins.js",
+		"/Users/sammcafee/Work/luxr/app/assets/javascripts/application.js",
+		"/Users/sammcafee/Work/luxr/app/assets/javascripts/main.js.coffee",
+		"/Users/sammcafee/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/sammcafee/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/sammcafee/Work/luxr/config/application.yml.example",
+		"/Users/sammcafee/Work/luxr/config/application.yml",
+		"/Users/sammcafee/Work/luxr/Gemfile",
+		"/Users/sammcafee/Work/luxr/config/database.yml",
+		"/Users/sammcafee/Work/luxr/config/database.yml.example",
+		"/Users/sammcafee/Work/luxr/config/environment.rb",
+		"/Users/sammcafee/Work/luxr/script/cucumber",
+		"/Users/sammcafee/Work/luxr/.rvmrc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"anchor",
+			"Modernizr.history",
+			"TURBO LINKS"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/lib/service.php",
+					"settings":
+					{
+						"buffer_size": 4969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 14.0,
+						"translation.y": 1189.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controlpanel.php",
+					"settings":
+					{
+						"buffer_size": 82,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"auto_name": "controlpanel.php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/test.php",
+					"settings":
+					{
+						"buffer_size": 1027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"auto_name": "test.php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/index.php",
+					"settings":
+					{
+						"buffer_size": 1972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								736,
+								736
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/sign-up.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/sign-in.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/css/app.css",
+					"settings":
+					{
+						"buffer_size": 534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"about",
+				"app/views/about/about.haml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}
