@@ -1,13 +1,12 @@
 <?php
-
 function logout() {
 	session_destroy();
 	header("Location: /");
-	exit;
 }
 
-session_start();
-//var_dump($_SESSION);
-//session_destroy();
+function login() {
+	session_set_cookie_params(2592000, '/');
+	session_start();
+}
 
 ?>

@@ -69,8 +69,13 @@ function authenticate() {
 	if( empty($matches)) {
 		return $error = "We could not find an account with that email/password combination. Please try again.";
 	}
+	login();
+	$_SESSION['email'] = $_REQUEST['email'];
 	$_SESSION['user_id'] = $matches[0]['_id']['$oid'];
-	return false;
+		var_dump($_SESSION);
+	die();
+
+	header("Location: controlpanel.php");
 }
 
 ?>

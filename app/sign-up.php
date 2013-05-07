@@ -4,11 +4,13 @@ require "lib/account.php";
 
 if ($_REQUEST['signup-submit']) {
 
-	// display confirmation
-	if (!$error = validate_signup()) {
+	$error = validate_signup();
+
+	if ($error == "") {
+
+		// display confirmation
 		header("Location: confirmation.php");
 	}
-	exit;
 }
 require "header.php";
 

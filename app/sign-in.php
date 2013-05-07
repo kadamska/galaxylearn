@@ -5,10 +5,7 @@ require "lib/account.php";
 if ($_REQUEST['signin-submit']) {
 
 	// check sign-up info
-	if (!$error = authenticate()) {
-		header("Location: controlpanel.php");
-		exit;
-	}
+	$error = authenticate();
 }
 require "header.php";
 

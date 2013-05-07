@@ -458,3 +458,158 @@
 [Tue May 07 10:28:27 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
 [Tue May 07 10:29:09 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
 [Tue May 07 10:29:57 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:30:57 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:31:02 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:31:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:31:21 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:31:28 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:31:30 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:33:38 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:33:39 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:33:40 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:33:43 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:33:50 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:33:52 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:34:13 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:34:14 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:34:18 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:34:19 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:34:29 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:04 2013] [error] [client 127.0.0.1] script '/Library/WebServer/Documents/timemachinecode/app/workbench.php' not found or unable to stat, referer: http://localhost/index.php
+[Tue May 07 10:35:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:05 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:06 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:08 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:11 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:13 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:14 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:38 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:40 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:40 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:42 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:53 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:58 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:35:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:36:17 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:38:41 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:38:42 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:38:49 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com"}, referer: http://localhost/sign-up.php
+[Tue May 07 10:38:50 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:38:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:39:02 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:39:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:39:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:40:01 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:40:02 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:40:43 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:40:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:20 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:33 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:45 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:48 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:41:54 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:42:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:42:29 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:42:37 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:43:43 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:43:53 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:44:06 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:44:17 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:44:20 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:44:37 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:44:40 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:45:01 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:45:32 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:45:38 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:21 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:34 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:40 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:42 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:48 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:46:55 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com"}, referer: http://localhost/sign-up.php?email=&parent_email=&password=&signup-submit=true
+[Tue May 07 10:46:56 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:02 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com"}, referer: http://localhost/sign-up.php?email=mcafee.sam%40gmail.com&parent_email=sam%40radicalfusion.net&password=p&signup-submit=true
+[Tue May 07 10:47:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:10 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:15 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php?email=mcafee.sam%40gmail.com&parent_email=mcafee.sam%40gmail.com&password=p&signup-submit=true
+[Tue May 07 10:47:16 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:18 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:22 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:26 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:47:27 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:27 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:29 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:30 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:47:32 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:48:56 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:48:59 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":""}, referer: http://localhost/sign-in.php
+[Tue May 07 10:49:00 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:49:03 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php?email=mcafee.sam%40gmail.com&password=&signin-submit=true
+[Tue May 07 10:49:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:49:07 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:49:08 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:49:09 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:49:26 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:50:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:50:13 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:50:17 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:50:22 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:50:24 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:50:56 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:50:57 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:51:00 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:51:01 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:51:23 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:51:24 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:51:25 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:52:52 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:52:54 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:52:58 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:52:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:01 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:02 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:09 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:53:10 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:52 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:53 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:54 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:54 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:56 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":""}, referer: http://localhost/sign-in.php
+[Tue May 07 10:53:57 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:53:59 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php?email=mcafee.sam%40gmail.com&password=&signin-submit=true
+[Tue May 07 10:53:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:54:32 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php?email=mcafee.sam%40gmail.com&password=&signin-submit=true
+[Tue May 07 10:54:33 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:54:46 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:54:52 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:54:54 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:54:58 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php?email=mcafee.sam%40gmail.com&password=&signin-submit=true
+[Tue May 07 10:54:58 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:55:03 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:55:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:55:05 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:02 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:04 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:08 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:56:09 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:11 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:11 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:14 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:19 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:56:20 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:55 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:56 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:56:59 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:56:59 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:57:06 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:57:09 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:57:10 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:57:37 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:57:39 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Tue May 07 10:57:42 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"mcafee.sam@gmail.com","password":"p"}, referer: http://localhost/sign-in.php
+[Tue May 07 10:57:42 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico

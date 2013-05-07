@@ -1,9 +1,7 @@
 <?php
 
+require "lib/session.php";
 require "lib/service.php";
-
-$StoryService = new DataService("stories");
-
 require "header.php";
 
 ?>

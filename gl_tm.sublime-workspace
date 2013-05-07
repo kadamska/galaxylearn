@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"se",
+				"session_register"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"us",
+				"UserService"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pare",
+				"parent_email"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"ses",
+				"session_start"
+			],
+			[
 				"margin-",
 				"margin-bottom"
 			],
@@ -44,10 +84,6 @@
 				"function"
 			],
 			[
-				"js",
-				"json_decode"
-			],
-			[
 				"json",
 				"json_encode"
 			],
@@ -72,45 +108,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/lib/service.php",
+			"file": "app/lib/session.php",
 			"settings":
 			{
-				"buffer_size": 4969,
+				"buffer_size": 157,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controlpanel.php",
+			"file": "app/lib/account.php",
 			"settings":
 			{
-				"buffer_size": 82,
-				"line_ending": "Unix",
-				"name": "controlpanel.php"
-			}
-		},
-		{
-			"file": "app/test.php",
-			"settings":
-			{
-				"buffer_size": 1027,
-				"line_ending": "Unix",
-				"name": "test.php"
-			}
-		},
-		{
-			"file": "app/index.php",
-			"settings":
-			{
-				"buffer_size": 1972,
-				"line_ending": "Unix",
-				"name": "index.php"
-			}
-		},
-		{
-			"file": "app/sign-up.php",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 1818,
 				"line_ending": "Unix"
 			}
 		},
@@ -118,15 +127,23 @@
 			"file": "app/sign-in.php",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 851,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/css/app.css",
+			"file": "app/footer.php",
 			"settings":
 			{
-				"buffer_size": 534,
+				"buffer_size": 446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controlpanel.php",
+			"settings":
+			{
+				"buffer_size": 219,
 				"line_ending": "Unix"
 			}
 		}
@@ -195,6 +212,20 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/timemachinecode/app/sign-up.php",
+		"/Library/WebServer/Documents/timemachinecode/app/sign-in.php",
+		"/Library/WebServer/Documents/timemachinecode/app/controlpanel.php",
+		"/Library/WebServer/Documents/timemachinecode/app/header.php",
+		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
+		"/Library/WebServer/Documents/timemachinecode/app/css/app.css",
+		"/Library/WebServer/Documents/timemachinecode/app/footer.php",
+		"/Library/WebServer/Documents/timemachinecode/app/confirmation.php",
+		"/Library/WebServer/Documents/timemachinecode/app/test.php",
+		"/Library/WebServer/Documents/timemachinecode/app/lib/session.php",
+		"/Library/WebServer/Documents/timemachinecode/app/sign-out.php",
+		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
+		"/Library/WebServer/Documents/timemachinecode/app/index.php",
+		"/Library/WebServer/Documents/timemachinecode/app/signout.php",
 		"/Users/sammcafee/Work/timemachinecode/app/lib/service.php",
 		"/Users/sammcafee/Work/timemachinecode/app/js/controllers.js",
 		"/Users/sammcafee/Work/galaxylearn/app/index.html",
@@ -240,6 +271,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			"anchor",
 			"Modernizr.history",
 			"TURBO LINKS"
@@ -260,55 +292,27 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/lib/service.php",
+					"file": "app/lib/session.php",
 					"settings":
 					{
-						"buffer_size": 4969,
+						"buffer_size": 157,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								165,
-								165
+								130,
+								130
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 14.0,
-						"translation.y": 1189.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controlpanel.php",
-					"settings":
-					{
-						"buffer_size": 82,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								78,
-								78
-							]
-						],
-						"settings":
-						{
-							"auto_name": "controlpanel.php",
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -318,25 +322,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/test.php",
+					"buffer": 1,
+					"file": "app/lib/account.php",
 					"settings":
 					{
-						"buffer_size": 1027,
+						"buffer_size": 1818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								1773,
+								1773
 							]
 						],
 						"settings":
 						{
-							"auto_name": "test.php",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 577.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/sign-in.php",
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -346,24 +377,25 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/index.php",
+					"file": "app/footer.php",
 					"settings":
 					{
-						"buffer_size": 1972,
+						"buffer_size": 446,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								736,
-								736
+								446,
+								446
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.php",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -373,77 +405,23 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/sign-up.php",
+					"file": "app/controlpanel.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 219,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								61,
+								61
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/sign-in.php",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/css/app.css",
-					"settings":
-					{
-						"buffer_size": 534,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								530,
-								530
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -460,7 +438,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
