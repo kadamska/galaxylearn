@@ -12,4 +12,3 @@
   <script src="js/directives.js"></script>
 </body>
 </html>
-<?php var_dump($_SESSION); ?>

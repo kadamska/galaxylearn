@@ -69,12 +69,11 @@ function authenticate() {
 	if( empty($matches)) {
 		return $error = "We could not find an account with that email/password combination. Please try again.";
 	}
-	login();
+	if( $matches[0]['authorized'] == false) {
+		return $error = "Your parent or guardian has not authorized this account yet.";
+	}
 	$_SESSION['email'] = $_REQUEST['email'];
 	$_SESSION['user_id'] = $matches[0]['_id']['$oid'];
-		var_dump($_SESSION);
-	die();
-
 	header("Location: controlpanel.php");
 }
 

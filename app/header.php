@@ -28,10 +28,11 @@
             <?php } ?>
             <li><a href="about.php">About</a></li>
             <?php if ($_SESSION['user_id']) { ?>
-            <li><a href="sign-out.php"><?=$_SESSION['email']?>(<small>Logout</small>)</a></li>
+            <li><a href="sign-out.php">(<small>Logout</small>)</a></li>
             <?php } else { ?>
             <li><a href="sign-in.php">Login</a></li>
             <?php } ?>
   			 </ul>
+         <?php if ($_SESSION['user_id']) { ?>Logged in as <?=$_SESSION['email']?> <?php } ?>
   		  </div>
       </div>
