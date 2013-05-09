@@ -62,7 +62,7 @@ class DataService
 		$data = json_encode($data);
 
 		$path = $this->URL . $this->database . $this->collection . $this->key;
-
+		error_log($path);
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                  

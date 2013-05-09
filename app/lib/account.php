@@ -22,6 +22,7 @@ function validate_signup() {
 
 	// register
 	if (register_user() == false) {
+		error_log("register_user returned false");
 		$error = "Cannot register user.";
 		return $error;
 	}
@@ -51,9 +52,12 @@ function register_user() {
 			'password' => $_REQUEST['password']
 		);
 	$user_id = $UserService->service_post($data);
+	error_log( "got this from mongo: " . $user_id);
 	if ($user_id) {
-		$_SESSION['user_id'] = $user_id;
-		$_SESSION['email'] = $_REQUEST['email'];
+		if (!send_parent_email($user_id)) {
+			error_log(" Could not send parent email ");
+			return faslse;
+		}
 		return true;
 	}
 	return false;
@@ -75,6 +79,22 @@ function authenticate() {
 	$_SESSION['email'] = $_REQUEST['email'];
 	$_SESSION['user_id'] = $matches[0]['_id']['$oid'];
 	header("Location: controlpanel.php");
+}
+
+function send_parent_email($user_id) {
+	$url = $_SERVER["HTTP_HOST"] . "/terms.php?uid=" . $user_id;
+	$link = "<a href='" . $url . "'>Click here</a>";
+	$address = $_REQUEST['parent_email'];
+	$subject = "Welcome to Galaxy Learn - Time Machine";
+	$body = $link . " to read and agree to the Terms of Service.";
+	// To send HTML mail, the Content-type header must be set
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+	if (mail($address, $subject, $body, $headers)) {
+		return true;
+	}
+	return false;
 }
 
 ?>
