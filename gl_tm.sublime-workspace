@@ -4,12 +4,20 @@
 		"selected_items":
 		[
 			[
-				"error",
+				"user",
+				"user_id"
+			],
+			[
+				"register",
+				"register_user"
+			],
+			[
+				"eror",
 				"error_log"
 			],
 			[
-				"user",
-				"user"
+				"error",
+				"error_log"
 			],
 			[
 				"json",
@@ -158,6 +166,22 @@
 				"buffer_size": 1074,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/lib/service.php",
+			"settings":
+			{
+				"buffer_size": 5113,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/account.php",
+			"settings":
+			{
+				"buffer_size": 2593,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -224,6 +248,7 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/timemachinecode/app/phpinfo.php",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
 		"/Library/WebServer/Documents/timemachinecode/app/sign-up.php",
 		"/Library/WebServer/Documents/timemachinecode/app/sign-in.php",
@@ -304,7 +329,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -406,7 +431,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -465,6 +491,60 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/lib/service.php",
+					"settings":
+					{
+						"buffer_size": 5113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2196,
+								2196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/lib/account.php",
+					"settings":
+					{
+						"buffer_size": 2593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2332,
+								2332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
