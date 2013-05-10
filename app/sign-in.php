@@ -17,7 +17,7 @@ require "header.php";
 				<h3>Sign in to your account:</h3>
 				<?php if ($error) { ?><div class="alert alert-error"><?php echo $error; ?></div><?php } ?>
 
-					<form action="sign-in.php">
+					<form action="sign-in.php" method="POST">
 						<label>Your email address</label>
 						<input type="text" name="email" value="<?=$_REQUEST['email'] ?>">
 						<label>Your password</label>

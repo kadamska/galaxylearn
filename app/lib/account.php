@@ -88,13 +88,14 @@ function send_parent_email($user_id) {
 	$subject = "Welcome to Galaxy Learn - Time Machine";
 	$body = $link . " to read and agree to the Terms of Service.";
 	// To send HTML mail, the Content-type header must be set
-	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	//$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-	if (mail($address, $subject, $body, $headers)) {
-		return true;
+	if (!mail($address, $subject, $body, $headers)) {
+		error_log($headers);
+		return false;
 	}
-	return false;
+	return true;
 }
 
 ?>

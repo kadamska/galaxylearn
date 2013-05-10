@@ -686,3 +686,37 @@
 [Thu May 09 08:58:25 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
 [Thu May 09 09:11:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
 [Thu May 09 09:11:14 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:34:08 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:34:10 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:34:15 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php
+[Fri May 10 08:34:17 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:35:29 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php
+[Fri May 10 08:35:30 2013] [error] [client 127.0.0.1] https://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C, referer: http://localhost/sign-up.php
+[Fri May 10 08:35:30 2013] [error] [client 127.0.0.1] got this from mongo: 518d13bfe4b0b730eb02a287, referer: http://localhost/sign-up.php
+[Fri May 10 08:35:30 2013] [error] [client 127.0.0.1] death of email ??????????????????, referer: http://localhost/sign-up.php
+[Fri May 10 08:35:31 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:36:52 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:37:11 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php
+[Fri May 10 08:37:12 2013] [error] [client 127.0.0.1] https://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C, referer: http://localhost/sign-up.php
+[Fri May 10 08:37:13 2013] [error] [client 127.0.0.1] got this from mongo: 518d1425e4b0b730eb02a356, referer: http://localhost/sign-up.php
+[Fri May 10 08:37:13 2013] [error] [client 127.0.0.1] MIME-Version: 1.0\r\nContent-type: text/html; charset=iso-8859-1\r\n, referer: http://localhost/sign-up.php
+[Fri May 10 08:37:13 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:40:23 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:40:27 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php
+[Fri May 10 08:40:28 2013] [error] [client 127.0.0.1] https://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C, referer: http://localhost/sign-up.php
+[Fri May 10 08:40:28 2013] [error] [client 127.0.0.1] got this from mongo: 518d14e9e4b08bbf6aa914b6, referer: http://localhost/sign-up.php
+[Fri May 10 08:40:28 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:41:24 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:41:27 2013] [error] [client 127.0.0.1] MongoLab callhttps://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"email":"sam@radicalfusion.net"}, referer: http://localhost/sign-up.php
+[Fri May 10 08:41:28 2013] [error] [client 127.0.0.1] https://api.mongolab.com/api/1/databases/galaxydb/collections/users/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C, referer: http://localhost/sign-up.php
+[Fri May 10 08:41:28 2013] [error] [client 127.0.0.1] got this from mongo: 518d1525e4b08bbf6aa91533, referer: http://localhost/sign-up.php
+[Fri May 10 08:41:28 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:41:46 2013] [error] [client 127.0.0.1] script '/Library/WebServer/Documents/timemachinecode/app/terms.php' not found or unable to stat
+[Fri May 10 08:41:47 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:45:11 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:45:49 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:46:19 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:47:15 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:48:12 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:48:22 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico
+[Fri May 10 08:48:35 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/favicon.ico

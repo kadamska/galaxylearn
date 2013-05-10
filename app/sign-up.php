@@ -22,7 +22,7 @@ require "header.php";
 				<h3>Sign up for an account:</h3>
 				<?php if ($error) { ?><div class="alert alert-error"><?php echo $error; ?></div><?php } ?>
 
-					<form action="sign-up.php">
+					<form action="sign-up.php" method="POST">
 						<label>Your email address</label>
 						<input type="text" name="email" value="<?=$_REQUEST['email'] ?>">
 						<label>Your parent's or guardian's email address</label>
