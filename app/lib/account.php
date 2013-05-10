@@ -98,4 +98,16 @@ function send_parent_email($user_id) {
 	return true;
 }
 
+function activate_user($uid) {
+	$UserService = new DataService('users');
+	$User = $UserService->service_get_one($uid);
+	$user = json_decode($User, true);
+	$user["authorized"] = "1";
+	$result = json_decode($UserService->service_update($uid, $user));
+	if ($result) {
+		mail($user["email"], "Welcome to GL Timemachine", "You may now log into your account." );
+	}
+	return true;
+}
+
 ?>

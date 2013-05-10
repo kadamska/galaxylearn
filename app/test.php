@@ -29,6 +29,7 @@ $arrayName = array(
 printf ($DataService->service_get_one($oid));
 printf ("<br>");
 printf ($DataService->service_update($oid, $arrayName));
+printf ("<br>");
 printf ($DataService->service_get_one($oid));
 printf ("<hr>");
 

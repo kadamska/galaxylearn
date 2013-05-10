@@ -28,7 +28,7 @@ class DataService
 		$query = "&q=" . json_encode($query);
 
 		$path = $this->URL . $this->database . $this->collection . $this->key  . $query;
-		error_log("MongoLab call" . $path);
+		error_log("MongoLab call - get all - " . $path);
 
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
@@ -45,6 +45,7 @@ class DataService
 	function service_get_one($oid) {
 
 		$path = $this->URL . $this->database . $this->collection . $oid . $this->key;
+		error_log("MongoLab call - get one - " . $path);
 
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
@@ -62,7 +63,7 @@ class DataService
 		$data = json_encode($data);
 
 		$path = $this->URL . $this->database . $this->collection . $this->key;
-		error_log($path);
+		error_log("MongoLab call - insert - " . $path);
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                  
@@ -86,6 +87,7 @@ class DataService
 		$data_string = json_encode($changes);
 		
 		$path = $this->URL . $this->database . $this->collection . $oid . $this->key;
+		error_log("MongoLab call - update - " . $path);
 
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");                                                                     
@@ -103,6 +105,7 @@ class DataService
 	function service_delete($oid) {
 
 		$path = $this->URL . $this->database . $this->collection . $oid . $this->key;
+		error_log("MongoLab call - delete - " . $path);
 
 		$ch = curl_init($path);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");                                                                     

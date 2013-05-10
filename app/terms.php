@@ -1,17 +1,16 @@
 <?php
 
 require "lib/session.php";
-require "lib/service.php";
+require "lib/account.php";
 
 if ($_REQUEST['activate-submit']) {
 
-	$error = activate_user();
+	activate_user($_REQUEST['uid']);
+	header("Location: /");
+}
 
-	if ($error == "") {
-
-		// display confirmation
-		header("Location: /");
-	}
+if (!$_REQUEST['uid']) {
+	header("Location: /");
 }
 
 require "header.php";
@@ -28,9 +27,10 @@ require "header.php";
 			<div class="row">
 				<div class="span12">
 				<form action="terms.php" method="POST">
-					<input type="hidden" value="<?php $_RESQUEST['uid'] ?>" name="uid">
+					<input type="hidden" value="<?= $_REQUEST['uid'] ?>" name="uid">
 					<input type="checkbox" name="accept"> I accept the terms and conditions.
-					<button name="activate-submit" class="btn btn-primary btn-large">Accept</button>
+					<button name="activate-submit" value="true" class="btn btn-primary btn-large">Accept</button>
+				</form>
 				</div>
 			</div>
 			
