@@ -7,13 +7,13 @@ require "header.php";
 ?>
 
 
-			<div class="row">
-				<div class="span12">
+			<div class="row" ng-app="myApp">
+				<div class="span12"  ng-controller="MainCtrl">
 					<h3>Control Panel</h3>
 
 						<ul class="thumbnails" >
 						    <li class="span1" ng-repeat="era in eras">
-						    <a class="thumbnail" href="#/era/{{era.id}}" ><img src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg" alt=""  class="img-rounded"/></a>{{era.name}}
+						    <a class="thumbnail" href="#/era/{{era.id}}" ><img src="img/{{era.img}}" alt=""  class="img-rounded"/></a>{{era.name}}
 						    </li>
 						</ul>
 						<div ng-controller="Era">

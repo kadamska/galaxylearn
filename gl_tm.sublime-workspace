@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"js",
+				"json_decode"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"serv",
+				"service_get"
+			],
+			[
+				"User",
+				"UserService"
+			],
+			[
 				"user",
 				"user_id"
 			],
@@ -34,10 +54,6 @@
 			[
 				"us",
 				"UserService"
-			],
-			[
-				"js",
-				"json_encode"
 			],
 			[
 				"q",
@@ -131,7 +147,7 @@
 			"file": "app/sign-in.php",
 			"settings":
 			{
-				"buffer_size": 851,
+				"buffer_size": 865,
 				"line_ending": "Unix"
 			}
 		},
@@ -144,10 +160,10 @@
 			}
 		},
 		{
-			"file": "app/controlpanel.php",
+			"file": "app/terms.php",
 			"settings":
 			{
-				"buffer_size": 1244,
+				"buffer_size": 878,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,7 +179,7 @@
 			"file": "app/sign-up.php",
 			"settings":
 			{
-				"buffer_size": 1074,
+				"buffer_size": 1088,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,7 +187,7 @@
 			"file": "app/lib/service.php",
 			"settings":
 			{
-				"buffer_size": 5113,
+				"buffer_size": 5307,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +195,15 @@
 			"file": "app/lib/account.php",
 			"settings":
 			{
-				"buffer_size": 2593,
+				"buffer_size": 2996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/test.php",
+			"settings":
+			{
+				"buffer_size": 1044,
 				"line_ending": "Unix"
 			}
 		}
@@ -363,15 +387,15 @@
 					"file": "app/sign-in.php",
 					"settings":
 					{
-						"buffer_size": 851,
+						"buffer_size": 865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								457,
+								457
 							]
 						],
 						"settings":
@@ -415,18 +439,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/controlpanel.php",
+					"file": "app/terms.php",
 					"settings":
 					{
-						"buffer_size": 1244,
+						"buffer_size": 878,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								99,
+								99
 							]
 						],
 						"settings":
@@ -473,15 +497,15 @@
 					"file": "app/sign-up.php",
 					"settings":
 					{
-						"buffer_size": 1074,
+						"buffer_size": 1088,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								60,
+								60
 							]
 						],
 						"settings":
@@ -500,15 +524,15 @@
 					"file": "app/lib/service.php",
 					"settings":
 					{
-						"buffer_size": 5113,
+						"buffer_size": 5307,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2196,
-								2196
+								3508,
+								3508
 							]
 						],
 						"settings":
@@ -517,7 +541,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 66.0,
+						"translation.y": 287.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -527,15 +551,15 @@
 					"file": "app/lib/account.php",
 					"settings":
 					{
-						"buffer_size": 2593,
+						"buffer_size": 2996,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2332,
-								2332
+								1803,
+								1803
 							]
 						],
 						"settings":
@@ -544,7 +568,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 1105.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/test.php",
+					"settings":
+					{
+						"buffer_size": 1044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								853,
+								853
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

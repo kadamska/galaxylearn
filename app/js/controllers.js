@@ -3,7 +3,7 @@
 /* Controllers */
 
 function MainCtrl($scope, $http, $location) {
-    $http.get('data/eras.json').success(function(data) {
+    $http.get('data.php').success(function(data) {
             $scope.eras = data;
     });
 }
