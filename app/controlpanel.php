@@ -29,6 +29,7 @@ require "header.php";
 							<option>Blah...</option>
 						</select>
 						</div>
+						<div ng-view></div>
 						<ul class="thumbnails">
 						    <li class="span2" ng-repeat="story in stories">
 						    <div class="thumbnail">
