@@ -1,7 +1,6 @@
 <?php
 
-require "lib/session.php";
-require "lib/account.php";
+require_once "_config.php";
 
 if ($_REQUEST['activate-submit']) {
 

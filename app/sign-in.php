@@ -1,6 +1,6 @@
 <?php
-require "lib/session.php";
-require "lib/account.php";
+
+require "_config.php";
 
 if ($_REQUEST['signin-submit']) {
 

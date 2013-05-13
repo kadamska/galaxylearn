@@ -1,6 +1,8 @@
 <?php
-require "lib/session.php";
-require "header.php";
+
+require_once "_config.php";
+
+require_once "header.php";
 
 ?>
 

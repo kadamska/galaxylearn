@@ -1,13 +1,37 @@
 <?php
 
-echo '[
-        {"id": 1, "name": "Ancient Egypt", "img" : "1ancient.png"},
-        {"id": 2, "name": "Ancient Greece", "img" : "2Medieval.jpg"},
-        {"id": 3, "name": "Medieval Europe", "img" : "3renaissmall.jpg"},
-        {"id": 4, "name": "Renaissance Europe", "img" : "4Discovery.jpg"},
-        {"id": 5, "name": "American Revolution", "img" : "5Enlightenment.jpg"},
-        {"id": 6, "name": "Nineteenth Century", "img" : "6Industrial.png"},
-        {"id": 7, "name": "Modern Era", "img" : "7Machine"}
-]';
+require_once "_config.php";
 
+if ($_REQUEST['type'] == "eras") {
+	$DataService = new DataService('eras');
+	$eras = $DataService->service_get();
+	echo $eras;
+
+}
+
+if ($_REQUEST['type'] == "stories") {
+	$DataService = new DataService('stories');
+	$stories = $DataService->service_get(array("era_id" => intval($_REQUEST['eraId'])));
+	echo $stories;
+
+}
+
+if ($_REQUEST['type'] == "story") {
+	$DataService = new DataService('stories');
+	$story = $DataService->service_get_one($_REQUEST['storyId']);
+	echo $story;
+}
+
+if ($_REQUEST['type'] == "newstory") {
+	$inputJSON = file_get_contents('php://input');
+	$input= json_decode( $inputJSON, TRUE );
+	$DataService = new DataService('stories');
+	$story = $DataService->service_update($input['id'],
+		array (
+			"era_id" =>  $input['era_id'], 
+			"title" =>  $input['title'], 
+			"body" => $input['body'])
+	);
+
+}
 ?>

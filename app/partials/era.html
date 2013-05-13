@@ -1,9 +1,7 @@
-
-<ul class="thumbnails">
+<ul class="thumbnails" ng-controller="EraCtrl">
     <li class="span2" ng-repeat="story in stories">
     <div class="thumbnail">
-    <img class="img-polaroid" src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg" >
-    <a href="#/story/{{story.id}}" >{{story.name}}</a><i class="icon-star"></i>
+    	<a href="#/story/{{story._id.$oid}}" >{{story.title}}<img class="img-polaroid" src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg" ></a>
     </div>
     </li>
 </ul>

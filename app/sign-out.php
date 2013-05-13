@@ -1,4 +1,6 @@
 <?php
-require "lib/session.php";
+
+require "_config.php";
+
 logout();
 ?>
