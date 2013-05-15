@@ -26,12 +26,18 @@ if ($_REQUEST['type'] == "newstory") {
 	$inputJSON = file_get_contents('php://input');
 	$input= json_decode( $inputJSON, TRUE );
 	$DataService = new DataService('stories');
-	$story = $DataService->service_post(
-		array (
-			"era_id" =>  $input['era_id'], 
-			"title" =>  $input['title'], 
-			"body" => $input['body'])
-	);
+	$data =	array (
+				"era_id" =>  $input['era_id'], 
+				"title" =>  $input['title'], 
+				"img" =>  $input['img'], 
+				"body" => $input['body']);
+	if ($input['id'] != '') {
+		$story = $DataService->service_update($input['id'],	$data);
+	}
+	else {
+		$story = $DataService->service_post($data);
+	}
+		
 
 }
 ?>

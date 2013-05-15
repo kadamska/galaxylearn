@@ -3,9 +3,10 @@
 		<div class="span12">
 			<h2>Story Preview</h2>
 			<div class="row">
-				<div class="span9">
+				<div class="span9 media">
 					<a href="#/story/edit/{{story._id.$oid}}">edit</a>
 					<h3>{{story.title}}</h3>
+					<img src="{{story.img}}" class="media-object pull-left">
 					<p>{{story.body}}</p>
 				</div>
 
