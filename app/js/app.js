@@ -11,3 +11,11 @@ angular.module('myApp', []).
     when('/story/edit/:storyId', {templateUrl: 'partials/story-edit.html', controller: StoryCtrl}).
     otherwise({redirectTo: '/home'});
   }]);
+
+// Declare app level module which depends on filters, and services
+angular.module('wbApp', []).
+  config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+    when('/story/create', {templateUrl: 'partials/story-new.html', controller: StoryNewCtrl}).
+    otherwise({redirectTo: '/home'});
+  }]);

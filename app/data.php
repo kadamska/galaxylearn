@@ -26,7 +26,7 @@ if ($_REQUEST['type'] == "newstory") {
 	$inputJSON = file_get_contents('php://input');
 	$input= json_decode( $inputJSON, TRUE );
 	$DataService = new DataService('stories');
-	$story = $DataService->service_update($input['id'],
+	$story = $DataService->service_post(
 		array (
 			"era_id" =>  $input['era_id'], 
 			"title" =>  $input['title'], 

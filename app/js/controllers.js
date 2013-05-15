@@ -39,3 +39,24 @@ function StoryCtrl($scope, $routeParams, $http) {
 
     };
 }
+
+function StoryNewCtrl ($scope, $routeParams, $http) {
+
+    $scope.submit_story=  function () {
+        $http({
+            url: 'data.php?type=newstory',
+            method: "PUT",
+            data: {
+                'era_id': 1,
+                'body': $scope.story.body,
+                'title': $scope.story.title},
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function (response) {
+                alert("Your story has been saved.");
+            }).error(function (response) {
+                alert("There was a problem saving your story. Please try again later.");
+            });
+
+
+    };
+}

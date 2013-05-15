@@ -1,0 +1,29 @@
+<div ng-controller="StoryNewCtrl">
+	<div class="row">
+		<div class="span12">
+			<h2>Edit Story</h2>
+			<div class="row">
+				<div class="span9">
+					<form no-validate name="StoryEdit" class="simple-form">
+					        <a href="#/story/{{story._id.$oid}}">preview this story</a>
+					        <input type="hidden" name="era_id" ng-model="story.era_id">
+					        <label>Title</label><input name="title" type="text" ng-model="story.title" /><br />
+					        <label>Body</label><textarea name="body" rows="10" ng-model="story.body"></textarea><br/>
+					        <button class"btn btn-primary btn-large" ng-click="submit_story()">SAVE</button>
+					</form>
+				</div>
+
+				<div class="span3">
+					<div class="media">
+					  <a class="pull-left" href="#">
+					    <img class="media-object" data-src="holder.js/64x64">
+					  </a>
+					  <div class="media-body">
+					    <h4 class="media-heading">Media heading</h4>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
