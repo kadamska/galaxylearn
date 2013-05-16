@@ -11,7 +11,11 @@ if ($_REQUEST['type'] == "eras") {
 
 if ($_REQUEST['type'] == "stories") {
 	$DataService = new DataService('stories');
-	$stories = $DataService->service_get(array("era_id" => intval($_REQUEST['eraId'])));
+	$params = array("era_id" => intval($_REQUEST['eraId']));
+	if ($_SESSION['user_id'] != 0) {
+		$params["user"] = $_SESSION['user_id'];
+	}
+	$stories = $DataService->service_get($params);
 	echo $stories;
 
 }

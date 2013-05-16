@@ -18,6 +18,7 @@ function StoryCtrl($scope, $routeParams, $http) {
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
             $scope.story = data;
     });
+    $scope.era_name = $routeParams.eraName;
     $scope.submit_story=  function () {
 
         $http({
@@ -42,12 +43,15 @@ function StoryCtrl($scope, $routeParams, $http) {
 
 function StoryNewCtrl ($scope, $routeParams, $http) {
 
+    $http.get('data.php?type=eras').success(function(data) {
+            $scope.eras = data;
+    });
     $scope.submit_story=  function () {
         $http({
             url: 'data.php?type=newstory',
             method: "POST",
             data: {
-                'era_id': 1,
+                'era_id': $scope.story.era_id,
                 'body': $scope.story.body,
                 'img': $scope.story.img, 
                 'title': $scope.story.title},

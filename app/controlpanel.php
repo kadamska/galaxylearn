@@ -13,11 +13,11 @@ require "header.php";
 
 						<ul class="thumbnails" >
 						    <li class="span1" ng-repeat="era in eras">
-						    <a class="thumbnail" href="#/era/{{era.id}}" ><img src="img/{{era.img}}" alt=""  class="img-rounded"/></a>{{era.name}}
+						    <a class="thumbnail" href="#/era/{{era.id}}/{{era.name}}" ><img src="img/{{era.img}}" alt=""  class="img-rounded"/></a>{{era.name}}
 						    </li>
 						</ul>
-						<h3> {{eras[eraId-1].name}}</h3>
 						<div>
+						<h3>{{era_name}}</h3>
 						<select>
 							<option>Theme...</option>
 						</select>

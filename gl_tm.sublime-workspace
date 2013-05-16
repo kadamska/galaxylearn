@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"inpu",
+				"inputJSON"
+			],
+			[
 				"er",
 				"eraId"
 			],
@@ -159,7 +167,7 @@
 			"file": "app/data.php",
 			"settings":
 			{
-				"buffer_size": 857,
+				"buffer_size": 993,
 				"line_ending": "Unix"
 			}
 		},
@@ -167,7 +175,7 @@
 			"file": "app/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 1276,
+				"buffer_size": 2062,
 				"line_ending": "Unix"
 			}
 		},
@@ -200,15 +208,15 @@
 			"file": "app/partials/story.html",
 			"settings":
 			{
-				"buffer_size": 588,
+				"buffer_size": 656,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/partials/story-edit.html",
+			"file": "app/partials/story-new.html",
 			"settings":
 			{
-				"buffer_size": 986,
+				"buffer_size": 1305,
 				"line_ending": "Unix"
 			}
 		},
@@ -224,7 +232,7 @@
 			"file": "app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 1142,
+				"buffer_size": 872,
 				"line_ending": "Unix"
 			}
 		},
@@ -241,6 +249,14 @@
 			"settings":
 			{
 				"buffer_size": 416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials/story-edit.html",
+			"settings":
+			{
+				"buffer_size": 1083,
 				"line_ending": "Unix"
 			}
 		}
@@ -383,6 +399,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"era_id",
 			";\n",
 			"anchor",
 			"Modernizr.history",
@@ -404,7 +421,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -412,15 +429,15 @@
 					"file": "app/data.php",
 					"settings":
 					{
-						"buffer_size": 857,
+						"buffer_size": 993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								751,
-								751
+								740,
+								740
 							]
 						],
 						"settings":
@@ -439,15 +456,15 @@
 					"file": "app/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 1276,
+						"buffer_size": 2062,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1274,
-								1274
+								1602,
+								1602
 							]
 						],
 						"settings":
@@ -457,7 +474,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 322.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -528,8 +545,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1864,
+								1864
 							]
 						],
 						"settings":
@@ -537,8 +554,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 387.0,
+						"translation.x": 3.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -548,15 +565,15 @@
 					"file": "app/partials/story.html",
 					"settings":
 					{
-						"buffer_size": 588,
+						"buffer_size": 656,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								531,
-								531
+								298,
+								298
 							]
 						],
 						"settings":
@@ -572,18 +589,18 @@
 				},
 				{
 					"buffer": 6,
-					"file": "app/partials/story-edit.html",
+					"file": "app/partials/story-new.html",
 					"settings":
 					{
-						"buffer_size": 986,
+						"buffer_size": 1305,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								346,
-								346
+								668,
+								668
 							]
 						],
 						"settings":
@@ -629,15 +646,15 @@
 					"file": "app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 1142,
+						"buffer_size": 872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								907,
-								907
+								827,
+								827
 							]
 						],
 						"settings":
@@ -707,6 +724,33 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/partials/story-edit.html",
+					"settings":
+					{
+						"buffer_size": 1083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -756,6 +800,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"store",
+				"app/partials/story-edit.html"
+			],
 			[
 				"foo",
 				"app/footer.php"

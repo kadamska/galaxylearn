@@ -9,6 +9,11 @@
 					        <input type="hidden" name="era_id" ng-model="story.era_id">
 					        <label>Title</label><input name="title" type="text" ng-model="story.title" /><br />
 					        <label>Image URL</label><input name="img" type="text" ng-model="story.img" /><br />
+					        <label>Era</label>
+					        <select name="era_id">
+					        	<option>select...</option>
+					        	<option value="{{era.id}}" ng-repeat="era in eras">{{era.name}}</option>
+					        </select>
 					        <label>Body</label><textarea name="body" rows="10" ng-model="story.body"></textarea><br/>
 					        <button class"btn btn-primary btn-large" ng-click="submit_story()">SAVE</button>
 					</form>
