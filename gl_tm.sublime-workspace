@@ -167,7 +167,7 @@
 			"file": "app/data.php",
 			"settings":
 			{
-				"buffer_size": 993,
+				"buffer_size": 1092,
 				"line_ending": "Unix"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "app/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 2062,
+				"buffer_size": 2106,
 				"line_ending": "Unix"
 			}
 		},
@@ -192,7 +192,7 @@
 			"file": "app/partials/era.html",
 			"settings":
 			{
-				"buffer_size": 265,
+				"buffer_size": 283,
 				"line_ending": "Unix"
 			}
 		},
@@ -224,7 +224,7 @@
 			"file": "app/controlpanel.php",
 			"settings":
 			{
-				"buffer_size": 759,
+				"buffer_size": 761,
 				"line_ending": "Unix"
 			}
 		},
@@ -232,7 +232,7 @@
 			"file": "app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 872,
+				"buffer_size": 881,
 				"line_ending": "Unix"
 			}
 		},
@@ -240,7 +240,7 @@
 			"file": "app/header.php",
 			"settings":
 			{
-				"buffer_size": 1417,
+				"buffer_size": 1454,
 				"line_ending": "Unix"
 			}
 		},
@@ -257,6 +257,14 @@
 			"settings":
 			{
 				"buffer_size": 1083,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/about.php",
+			"settings":
+			{
+				"buffer_size": 1604,
 				"line_ending": "Unix"
 			}
 		}
@@ -325,6 +333,7 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
 		"/Library/WebServer/Documents/timemachinecode/app/index.php",
 		"/Library/WebServer/Documents/timemachinecode/index.php",
 		"/Library/WebServer/Documents/timemachinecode/app/header.php",
@@ -349,7 +358,6 @@
 		"/Library/WebServer/Documents/timemachinecode/app/test.php",
 		"/Library/WebServer/Documents/timemachinecode/app/phpinfo.php",
 		"/Library/WebServer/Documents/timemachinecode/app/img/glyphicons-halflings.png",
-		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/session.php",
 		"/Library/WebServer/Documents/timemachinecode/app/css/app.css",
@@ -421,7 +429,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -429,15 +437,15 @@
 					"file": "app/data.php",
 					"settings":
 					{
-						"buffer_size": 993,
+						"buffer_size": 1092,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								740,
-								740
+								304,
+								304
 							]
 						],
 						"settings":
@@ -456,15 +464,15 @@
 					"file": "app/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 2062,
+						"buffer_size": 2106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1602,
-								1602
+								592,
+								592
 							]
 						],
 						"settings":
@@ -474,7 +482,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 322.0,
+						"translation.y": 339.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -512,15 +520,15 @@
 					"file": "app/partials/era.html",
 					"settings":
 					{
-						"buffer_size": 265,
+						"buffer_size": 283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								228,
-								228
+								47,
+								47
 							]
 						],
 						"settings":
@@ -572,8 +580,8 @@
 						"selection":
 						[
 							[
-								298,
-								298
+								151,
+								151
 							]
 						],
 						"settings":
@@ -619,15 +627,15 @@
 					"file": "app/controlpanel.php",
 					"settings":
 					{
-						"buffer_size": 759,
+						"buffer_size": 761,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								84,
-								98
+								473,
+								473
 							]
 						],
 						"settings":
@@ -646,15 +654,15 @@
 					"file": "app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 872,
+						"buffer_size": 881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								827,
-								827
+								265,
+								265
 							]
 						],
 						"settings":
@@ -674,15 +682,15 @@
 					"file": "app/header.php",
 					"settings":
 					{
-						"buffer_size": 1417,
+						"buffer_size": 1454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1393,
+								1393
 							]
 						],
 						"settings":
@@ -751,6 +759,32 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/about.php",
+					"settings":
+					{
+						"buffer_size": 1604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -801,6 +835,14 @@
 		"selected_items":
 		[
 			[
+				"acc",
+				"app/lib/account.php"
+			],
+			[
+				"about",
+				"app/about.php"
+			],
+			[
 				"store",
 				"app/partials/story-edit.html"
 			],
@@ -831,10 +873,6 @@
 			[
 				"head",
 				"app/header.php"
-			],
-			[
-				"about",
-				"app/views/about/about.haml"
 			]
 		],
 		"width": 0.0

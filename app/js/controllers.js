@@ -18,6 +18,7 @@ function StoryCtrl($scope, $routeParams, $http) {
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
             $scope.story = data;
     });
+;
     $scope.era_name = $routeParams.eraName;
     $scope.submit_story=  function () {
 
@@ -65,3 +66,16 @@ function StoryNewCtrl ($scope, $routeParams, $http) {
 
     };
 }
+
+function DraftsCtrl($scope, $routeParams, $http) {
+    $http.get('data.php?type=user_stories_drafts').success(function(data) {
+            $scope.stories = data;
+    });
+}
+
+function SubmittedCtrl($scope, $routeParams, $http) {
+    $http.get('data.php?type=user_stories_submitted').success(function(data) {
+            $scope.stories = data;
+    });
+}
+

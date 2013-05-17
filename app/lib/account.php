@@ -110,4 +110,10 @@ function activate_user($uid) {
 	return true;
 }
 
+function restrict() {
+	if ($_SESSION['user_id'] == 0) {
+		header("Location: controlpanel.php");
+	}
+}
+
 ?>

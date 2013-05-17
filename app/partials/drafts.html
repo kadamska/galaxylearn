@@ -1,0 +1,9 @@
+<ul class="thumbnails" ng-controller="DraftsCtrl">
+    <li class="span4" ng-repeat="story in stories">
+    <div class="thumbnail">
+    	<a href="#/story/{{story._id.$oid}}" class="thumbnail" >{{story.title}}<img class="img-polaroid" src="{{story.img}}" ></a><br>
+		<a href="workbench.php#/story/edit/{{story._id.$oid}}">edit</a>
+
+    </div>
+    </li>
+</ul>

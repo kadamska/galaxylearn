@@ -11,9 +11,28 @@ if ($_REQUEST['type'] == "eras") {
 
 if ($_REQUEST['type'] == "stories") {
 	$DataService = new DataService('stories');
-	$params = array("era_id" => intval($_REQUEST['eraId']));
+	$params = array("era_id" => intval($_REQUEST['eraId']), "status" => 2);
+	$stories = $DataService->service_get($params);
+	echo $stories;
+
+}
+
+if ($_REQUEST['type'] == "user_stories_drafts") {
+	$DataService = new DataService('stories');
+	$params = array("status" => 0);
 	if ($_SESSION['user_id'] != 0) {
-		$params["user"] = $_SESSION['user_id'];
+	 	$params["user"] = $_SESSION['user_id'];
+	}
+	$stories = $DataService->service_get($params);
+	echo $stories;
+
+}
+
+if ($_REQUEST['type'] == "user_stories_submitted") {
+	$DataService = new DataService('stories');
+	$params = array("status" => 1);
+	if ($_SESSION['user_id'] != 0) {
+	 	$params["user"] = $_SESSION['user_id'];
 	}
 	$stories = $DataService->service_get($params);
 	echo $stories;
@@ -31,9 +50,11 @@ if ($_REQUEST['type'] == "newstory") {
 	$input= json_decode( $inputJSON, TRUE );
 	$DataService = new DataService('stories');
 	$data =	array (
+				"user" => $_SESSION['user_id'],
 				"era_id" =>  $input['era_id'], 
 				"title" =>  $input['title'], 
-				"img" =>  $input['img'], 
+				"img" =>  $input['img'],
+				"status" => 0, 
 				"body" => $input['body']);
 	if ($input['id'] != '') {
 		$story = $DataService->service_update($input['id'],	$data);
