@@ -4,6 +4,10 @@
 			<h2>Story Preview</h2>
 			<div class="row">
 				<div class="span9 media">
+					<div ng-controller="AdminButtonCtrl">
+						<span ng-bind="admin_approve"></span>
+						<span ng-bind="admin_reject"></span>
+					</div>
 					<h3>{{story.title}}</h3>
 					<img src="{{story.img}}" class="media-object pull-left">
 					<p>{{story.body}}</p>

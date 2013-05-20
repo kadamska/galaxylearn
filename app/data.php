@@ -65,4 +65,11 @@ if ($_REQUEST['type'] == "newstory") {
 		
 
 }
+
+if ($_REQUEST['type'] == "authenticated") {
+	$array = array('user_id' =>  $_SESSION['user_id'], 'admin' => $_SESSION['admin']);
+	echo json_encode($array);
+}
+
+
 ?>

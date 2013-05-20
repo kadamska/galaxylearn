@@ -78,6 +78,7 @@ function authenticate() {
 	}
 	$_SESSION['email'] = $_REQUEST['email'];
 	$_SESSION['user_id'] = $matches[0]['_id']['$oid'];
+	$_SESSION['admin'] = $matches[0]['admin'];
 	header("Location: controlpanel.php");
 }
 
