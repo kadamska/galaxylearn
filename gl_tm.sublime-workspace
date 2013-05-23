@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"dir",
+				"Directives"
+			],
+			[
 				"_",
 				"_SESSION"
 			],
@@ -164,83 +168,27 @@
 	"buffers":
 	[
 		{
-			"file": "app/data.php",
+			"file": "app/js/directives.js",
 			"settings":
 			{
-				"buffer_size": 1636,
+				"buffer_size": 166,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/js/controllers.js",
+			"file": "app/partials/admin.html",
 			"settings":
 			{
-				"buffer_size": 2462,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/workbench.php",
-			"settings":
-			{
-				"buffer_size": 557,
+				"buffer_size": 165,
 				"line_ending": "Unix",
-				"name": "<?php ?>"
-			}
-		},
-		{
-			"file": "app/partials/era.html",
-			"settings":
-			{
-				"buffer_size": 283,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/partials/drafts.html",
-			"settings":
-			{
-				"buffer_size": 357,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/partials/submitted.html",
-			"settings":
-			{
-				"buffer_size": 290,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/lib/service.php",
-			"settings":
-			{
-				"buffer_size": 5307,
-				"line_ending": "Unix"
+				"name": "admin.html"
 			}
 		},
 		{
 			"file": "app/partials/story.html",
 			"settings":
 			{
-				"buffer_size": 600,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/partials/story-new.html",
-			"settings":
-			{
-				"buffer_size": 1305,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controlpanel.php",
-			"settings":
-			{
-				"buffer_size": 761,
+				"buffer_size": 637,
 				"line_ending": "Unix"
 			}
 		},
@@ -248,47 +196,23 @@
 			"file": "app/js/app.js",
 			"settings":
 			{
-				"buffer_size": 1150,
+				"buffer_size": 1174,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/header.php",
+			"file": "app/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 1454,
+				"buffer_size": 2705,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/footer.php",
+			"file": "app/data.php",
 			"settings":
 			{
-				"buffer_size": 416,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/partials/story-edit.html",
-			"settings":
-			{
-				"buffer_size": 1083,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/about.php",
-			"settings":
-			{
-				"buffer_size": 1604,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/lib/account.php",
-			"settings":
-			{
-				"buffer_size": 3098,
+				"buffer_size": 1796,
 				"line_ending": "Unix"
 			}
 		}
@@ -296,9 +220,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 287.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"set php",
 				"Set Syntax: PHP"
@@ -340,7 +268,7 @@
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 575.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -357,23 +285,32 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/timemachinecode/app/js/services.js",
+		"/Library/WebServer/Documents/timemachinecode/app/admin.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/submitted.html",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/drafts.html",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/era.html",
+		"/Library/WebServer/Documents/timemachinecode/app/workbench.php",
+		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/story-new.html",
+		"/Library/WebServer/Documents/timemachinecode/app/data.php",
+		"/Library/WebServer/Documents/timemachinecode/app/js/app.js",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/story.html",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
+		"/Library/WebServer/Documents/timemachinecode/app/controlpanel.php",
+		"/Library/WebServer/Documents/timemachinecode/app/js/controllers.js",
+		"/Library/WebServer/Documents/timemachinecode/app/header.php",
+		"/Library/WebServer/Documents/timemachinecode/app/footer.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/story-edit.html",
+		"/Library/WebServer/Documents/timemachinecode/app/about.php",
+		"/Library/WebServer/Documents/timemachinecode/app/js/directives.js",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/home.html",
 		"/Library/WebServer/Documents/timemachinecode/app/index.php",
 		"/Library/WebServer/Documents/timemachinecode/index.php",
-		"/Library/WebServer/Documents/timemachinecode/app/header.php",
-		"/Library/WebServer/Documents/timemachinecode/app/js/app.js",
-		"/Library/WebServer/Documents/timemachinecode/app/controlpanel.php",
 		"/Library/WebServer/Documents/timemachinecode/app/postdata.php",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/story-edit.html",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/era.html",
 		"/Library/WebServer/Documents/timemachinecode/app/_index.html",
-		"/Library/WebServer/Documents/timemachinecode/app/js/controllers.js",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/home.html",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/story.html",
 		"/Library/WebServer/Documents/timemachinecode/app/data/eras.json",
 		"/Library/WebServer/Documents/timemachinecode/app/confirmation.php",
-		"/Library/WebServer/Documents/timemachinecode/app/data.php",
-		"/Library/WebServer/Documents/timemachinecode/app/footer.php",
 		"/Library/WebServer/Documents/timemachinecode/app/_config.php",
 		"/Library/WebServer/Documents/timemachinecode/app/sign-out.php",
 		"/Library/WebServer/Documents/timemachinecode/app/sign-in.php",
@@ -382,7 +319,6 @@
 		"/Library/WebServer/Documents/timemachinecode/app/test.php",
 		"/Library/WebServer/Documents/timemachinecode/app/phpinfo.php",
 		"/Library/WebServer/Documents/timemachinecode/app/img/glyphicons-halflings.png",
-		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/session.php",
 		"/Library/WebServer/Documents/timemachinecode/app/css/app.css",
 		"/Library/WebServer/Documents/timemachinecode/app/signout.php",
@@ -420,7 +356,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -431,6 +367,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"authenticated",
+			"Choose an",
 			"era_id",
 			";\n",
 			"anchor",
@@ -453,57 +391,55 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/data.php",
+					"file": "app/js/directives.js",
 					"settings":
 					{
-						"buffer_size": 1636,
+						"buffer_size": 166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1328,
-								1328
+								124,
+								124
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 322.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/js/controllers.js",
+					"file": "app/partials/admin.html",
 					"settings":
 					{
-						"buffer_size": 2462,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								553,
-								553
+								14,
+								14
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "admin.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -513,24 +449,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/workbench.php",
+					"file": "app/partials/story.html",
 					"settings":
 					{
-						"buffer_size": 557,
+						"buffer_size": 637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								180,
+								180
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<?php ?>",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -541,204 +476,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/partials/era.html",
-					"settings":
-					{
-						"buffer_size": 283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								144,
-								144
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/partials/drafts.html",
-					"settings":
-					{
-						"buffer_size": 357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								262,
-								262
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/partials/submitted.html",
-					"settings":
-					{
-						"buffer_size": 290,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								290,
-								290
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/lib/service.php",
-					"settings":
-					{
-						"buffer_size": 5307,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1864,
-								1864
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 3.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/partials/story.html",
-					"settings":
-					{
-						"buffer_size": 600,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156,
-								156
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/partials/story-new.html",
-					"settings":
-					{
-						"buffer_size": 1305,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								668,
-								668
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/controlpanel.php",
-					"settings":
-					{
-						"buffer_size": 761,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								473,
-								473
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
 					"file": "app/js/app.js",
 					"settings":
 					{
-						"buffer_size": 1150,
+						"buffer_size": 1174,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1102,
-								1102
+								561,
+								561
 							]
 						],
 						"settings":
@@ -754,102 +503,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "app/header.php",
+					"buffer": 4,
+					"file": "app/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 1454,
+						"buffer_size": 2705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1393,
-								1393
+								1517,
+								1517
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 280.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "app/footer.php",
+					"buffer": 5,
+					"file": "app/data.php",
 					"settings":
 					{
-						"buffer_size": 416,
+						"buffer_size": 1796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "app/partials/story-edit.html",
-					"settings":
-					{
-						"buffer_size": 1083,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								542,
-								542
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/about.php",
-					"settings":
-					{
-						"buffer_size": 1604,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								122,
-								122
+								1661,
+								1674
 							]
 						],
 						"settings":
@@ -858,34 +552,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/lib/account.php",
-					"settings":
-					{
-						"buffer_size": 3098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3087,
-								3087
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1172.0,
+						"translation.y": 475.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -33,6 +33,6 @@
             <li><a href="sign-in.php">Login</a></li>
             <?php } ?>
   			 </ul>
-         <?php if ($_SESSION['user_id']) { ?>Logged in as <?php echo $_SESSION['email']; echo $_SESSION['user_id']; ?> <?php } ?>
+         <?php if ($_SESSION['user_id']) { ?>Logged in as <?php echo $_SESSION['email'] ?> <?php } ?>
   		  </div>
       </div>

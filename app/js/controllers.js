@@ -6,9 +6,6 @@ function MainCtrl($scope, $http, $location) {
     $http.get('data.php?type=eras').success(function(data) {
             $scope.eras = data;
     });
-    $http.get('data.php?type=authenticated').success(function(data) {
-            $scope.authenticated = data;
-    });
 }
 
 function EraCtrl($scope, $routeParams, $http) {
@@ -43,13 +40,16 @@ function StoryCtrl($scope, $routeParams, $http) {
 
 
     };
-}
 
-function AdminButtonCtrl($scope, $routeParams, $http) {
-    if ($scope.authenticated != '') {
-        $scope.admin_approve = "APPROVE";
-        $scope.admin_reject = "REJECT"
-    }
+    $http.get('data.php?type=authenticated').success(function(data) {
+        if (data.admin == '1') {
+            $scope.visible = "display:visible;";
+        }
+        else {
+            $scope.visible = "display:none;";
+        }
+    });
+
 
 }
 
@@ -89,4 +89,3 @@ function SubmittedCtrl($scope, $routeParams, $http) {
             $scope.stories = data;
     });
 }
-

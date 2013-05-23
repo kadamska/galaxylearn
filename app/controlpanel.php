@@ -18,15 +18,6 @@ require "header.php";
 						</ul>
 						<div>
 						<h3>{{era_name}}</h3>
-						<select>
-							<option>Theme...</option>
-						</select>
-						<select>
-							<option>Place...</option>
-						</select>
-						<select>
-							<option>Blah...</option>
-						</select>
 						</div>
 						<div ng-view></div>
 

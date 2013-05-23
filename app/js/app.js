@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', []).
+var myapp = angular.module('myApp', []).
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/home', {templateUrl: 'partials/home.html'}).
@@ -12,7 +12,7 @@ angular.module('myApp', []).
   }]);
 
 // Declare app level module which depends on filters, and services
-angular.module('wbApp', []).
+var wbapp = angular.module('wbApp', []).
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/drafts', {templateUrl: 'partials/drafts.html', controller: DraftsCtrl}).
