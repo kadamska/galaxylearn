@@ -2,7 +2,7 @@
 	<h4>Admin Controls:</h4>
 	
 	<ul>
-		<li><a href="approve.php?story={{story._id.$oid}}">Approve</a></li>
-		<li><a href="">Reject</a></li>
+		<li><button ng-click="approve({{story._id.$oid}})">Approve</button></li>
+		<li><button ng-click="reject({{story._id.$oid}})">Reject</button></li>
 	</ul>
 </div>

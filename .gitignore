@@ -1,2 +1,8 @@
 logs/*
 !.gitkeep
+
+.env
+
+logfile
+
+logfile

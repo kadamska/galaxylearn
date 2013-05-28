@@ -22,7 +22,6 @@ function validate_signup() {
 
 	// register
 	if (register_user() == false) {
-		error_log("register_user returned false");
 		$error = "Cannot register user.";
 		return $error;
 	}
@@ -52,10 +51,8 @@ function register_user() {
 			'password' => $_REQUEST['password']
 		);
 	$user_id = $UserService->service_post($data);
-	error_log( "got this from mongo: " . $user_id);
 	if ($user_id) {
 		if (!send_parent_email($user_id)) {
-			error_log(" Could not send parent email ");
 			return faslse;
 		}
 		return true;
@@ -88,12 +85,9 @@ function send_parent_email($user_id) {
 	$address = $_REQUEST['parent_email'];
 	$subject = "Welcome to Galaxy Learn - Time Machine";
 	$body = $link . " to read and agree to the Terms of Service.";
-	// To send HTML mail, the Content-type header must be set
-	//$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 	if (!mail($address, $subject, $body, $headers)) {
-		error_log($headers);
 		return false;
 	}
 	return true;
@@ -115,6 +109,40 @@ function restrict() {
 	if ($_SESSION['user_id'] == 0) {
 		header("Location: controlpanel.php");
 	}
+}
+
+function send_email() {
+	$uri = "https://mandrillapp.com/api/1.0/messages/send.json?key=TfwBVbcI1N54lNqfsAEL6A";
+	$data = array (
+		"key" => "TfwBVbcI1N54lNqfsAEL6A",
+		"message" =>
+			array (
+				"html"=> "this is the emails html content",
+		    	"text"=> "this is the emails text content",
+		    	"subject" => "this is the subject",
+		    	"from_email" => "mcafee.sam@gmail.com",
+		    	"from_name" => "John",
+		    	"to" => array(
+		    				array("email" => "sam@radicalfusion.net", "name" => "Bob"),
+		    				array("email" => "sam@radicalfusion.net", "name" => "Bob")
+		    			),
+		    	"headers" => array()
+		    ),
+		"async" => "false"
+		);	
+	$postfields = json_encode($data);
+	$ch = curl_init($uri);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);                                                                  
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+	    'Content-Type: application/json',                                                                                
+	    'Content-Length: ' . strlen($postfields))                                                                       
+	);                                                                                                                   
+	
+	$result = curl_exec($ch);
+	curl_close($ch);
+    return $result;
 }
 
 ?>

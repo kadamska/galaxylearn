@@ -66,6 +66,22 @@ if ($_REQUEST['type'] == "newstory") {
 
 }
 
+if ($_REQUEST['type'] == "submitStory") {
+	$inputJSON = file_get_contents('php://input');
+	$input= json_decode( $inputJSON, TRUE );
+	$DataService = new DataService('stories');
+	$data =	array (
+				"user" => $_SESSION['user_id'],
+				"era_id" =>  $input['era_id'], 
+				"title" =>  $input['title'], 
+				"img" =>  $input['img'],
+				"status" => $input['status'], 
+				"body" => $input['body']);
+	$story = $DataService->service_update($input['id'],	$data);
+		
+
+}
+
 if ($_REQUEST['type'] == "authenticated") {
 	$array = array('user_id' =>  $_SESSION['user_id'], 'admin' => $_SESSION['admin']);
 	echo json_encode($array);

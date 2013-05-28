@@ -1,10 +1,11 @@
 <?php
 
-require "lib/service.php";
+require_once "lib/account.php";
+require_once "lib/service.php";
 
 $DataService = new DataService();
 
-printf ("<h1>DataService Tests</h1>");
+/*printf ("<h1>DataService Tests</h1>");
 printf ("<h3>DataService Get</h3>");
 printf ($DataService->service_get());
 printf ("<hr>");
@@ -39,5 +40,7 @@ printf ("<hr>");
 
 printf ("<h3>DataService Final List</h3>");
 printf ($DataService->service_get());
-printf ("<hr>");
+printf ("<hr>");*/
+
+printf (send_email());
 ?>

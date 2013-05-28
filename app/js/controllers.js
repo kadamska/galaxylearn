@@ -18,7 +18,7 @@ function StoryCtrl($scope, $routeParams, $http) {
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
             $scope.story = data;
     });
-;
+
     $scope.era_name = $routeParams.eraName;
     $scope.submit_story=  function () {
 
@@ -36,10 +36,28 @@ function StoryCtrl($scope, $routeParams, $http) {
                 alert("Your story has been saved.");
             }).error(function (response) {
                 alert("There was a problem saving your story. Please try again later.");
+        });
+    }
+
+    $scope.submitForReview = function() {
+        console.log('submitted');
+        $http({
+            url: 'data.php?type=submitStory',
+            method: "POST",
+            data: {
+                'era_id': $scope.story.era_id,
+                'status': 1,
+                'body': $scope.story.body,
+                'title': $scope.story.title, 
+                'img': $scope.story.img, 
+                'id': $scope.story._id.$oid},
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function (response) {
+                alert("Your story has been submitted.");
+            }).error(function (response) {
+                alert("There was a problem submitting your story. Please try again later.");
             });
-
-
-    };
+        }
 
     $http.get('data.php?type=authenticated').success(function(data) {
         if (data.admin == '1') {
@@ -50,7 +68,13 @@ function StoryCtrl($scope, $routeParams, $http) {
         }
     });
 
+    $scope.approve = function(id) {
+        console.log(id + ' approved');
+    }
 
+    $scope.reject = function(id) {
+        console.log(id + ' rejected');
+    }
 }
 
 function StoryNewCtrl ($scope, $routeParams, $http) {
