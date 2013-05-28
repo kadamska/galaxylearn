@@ -430,3 +430,72 @@
 [Tue May 28 06:34:58 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4
 [Tue May 28 06:35:56 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4
 [Tue May 28 06:38:40 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4
+[Tue May 28 06:57:39 2013] [error] [client 127.0.0.1] PHP Parse error:  parse error, expecting `')'' in /Library/WebServer/Documents/timemachinecode/app/lib/account.php on line 87
+[Tue May 28 06:57:41 2013] [error] [client 127.0.0.1] PHP Parse error:  parse error, expecting `')'' in /Library/WebServer/Documents/timemachinecode/app/lib/account.php on line 87
+[Tue May 28 06:58:04 2013] [error] [client 127.0.0.1] PHP Parse error:  parse error, expecting `')'' in /Library/WebServer/Documents/timemachinecode/app/lib/account.php on line 88
+[Tue May 28 06:59:36 2013] [error] [client 127.0.0.1] PHP Parse error:  parse error, expecting `')'' in /Library/WebServer/Documents/timemachinecode/app/lib/account.php on line 109
+[Tue May 28 06:59:53 2013] [error] [client 127.0.0.1] PHP Parse error:  parse error, expecting `')'' in /Library/WebServer/Documents/timemachinecode/app/lib/account.php on line 109
+[Tue May 28 07:00:04 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4
+[Tue May 28 07:00:04 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26
+[Tue May 28 07:00:04 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30
+[Tue May 28 07:00:04 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: signup-submit in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 5, referer: http://localhost/
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/
+[Tue May 28 07:00:08 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: error in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 23, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: signup-submit in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 5, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/
+[Tue May 28 07:00:13 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: error in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 23, referer: http://localhost/
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/sign-up.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/sign-up.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/sign-up.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/sign-up.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/img/{{era.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:20 2013] [error] [client 127.0.0.1] MongoLab call - get all - https://api.mongolab.com/api/1/databases/galaxydb/collections/eras/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q=null, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:21 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/img/{{era.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:23 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/{{story.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:23 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:23 2013] [error] [client 127.0.0.1] MongoLab call - get all - https://api.mongolab.com/api/1/databases/galaxydb/collections/stories/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q={"era_id":1,"status":2}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:24 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/{{story.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:26 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:26 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:26 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:26 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/index.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: signup-submit in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 5, referer: http://localhost/index.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/index.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/index.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/index.php
+[Tue May 28 07:00:28 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: error in /Library/WebServer/Documents/timemachinecode/app/sign-up.php on line 23, referer: http://localhost/index.php
+[Tue May 28 07:00:30 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:30 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:30 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:30 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:31 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/index.php
+[Tue May 28 07:00:31 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/index.php
+[Tue May 28 07:00:31 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/index.php
+[Tue May 28 07:00:31 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/index.php
+[Tue May 28 07:00:32 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/img/{{era.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:32 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:32 2013] [error] [client 127.0.0.1] MongoLab call - get all - https://api.mongolab.com/api/1/databases/galaxydb/collections/eras/?apiKey=Jw_AkCQGOcVx4PyG8ZhSWf38TsxIaH6C&q=null, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:32 2013] [error] [client 127.0.0.1] File does not exist: /Library/WebServer/Documents/timemachinecode/app/img/{{era.img}}, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:33 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:33 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:33 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:33 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/index.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: signin-submit in /Library/WebServer/Documents/timemachinecode/app/sign-in.php on line 5, referer: http://localhost/index.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/index.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/index.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/index.php
+[Tue May 28 07:00:35 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: error in /Library/WebServer/Documents/timemachinecode/app/sign-in.php on line 18, referer: http://localhost/index.php
+[Tue May 28 07:00:38 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: oid in /Library/WebServer/Documents/timemachinecode/app/lib/service.php on line 4, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:38 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 26, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:38 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 30, referer: http://localhost/controlpanel.php
+[Tue May 28 07:00:38 2013] [error] [client 127.0.0.1] PHP Notice:  Undefined index: user_id in /Library/WebServer/Documents/timemachinecode/app/header.php on line 36, referer: http://localhost/controlpanel.php

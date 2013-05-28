@@ -82,12 +82,16 @@ function authenticate() {
 function send_parent_email($user_id) {
 	$url = $_SERVER["HTTP_HOST"] . "/terms.php?uid=" . $user_id;
 	$link = "<a href='" . $url . "'>Click here</a>";
-	$address = $_REQUEST['parent_email'];
-	$subject = "Welcome to Galaxy Learn - Time Machine";
-	$body = $link . " to read and agree to the Terms of Service.";
-	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-	if (!mail($address, $subject, $body, $headers)) {
+	$email_values = array(
+			'message_html_body' => $link . " to read and agree to the Terms of Service.",
+			'message_subject' => "Welcome to Galaxy Learn - Time Machine",
+			'message_recipients' => array(
+			    				array("email" => $_REQUEST['parent_email'])
+			    			)
+		);
+	
+	$sent = send_email($email_values);
+	if (!$sent) {
 		return false;
 	}
 	return true;
@@ -100,7 +104,14 @@ function activate_user($uid) {
 	$user["authorized"] = "1";
 	$result = json_decode($UserService->service_update($uid, $user));
 	if ($result) {
-		mail($user["email"], "Welcome to GL Timemachine", "You may now log into your account." );
+		$email_values = array(
+				'message_html_body' => "You may now log into your account.",
+				'message_subject' => "Welcome to GL Timemachine",
+				'message_recipients' => array(
+				    				array("email" => $user["email"])
+				    			)
+			);
+		send_email($email_values);
 	}
 	return true;
 }
@@ -111,21 +122,18 @@ function restrict() {
 	}
 }
 
-function send_email() {
+function send_email($values) {
 	$uri = "https://mandrillapp.com/api/1.0/messages/send.json?key=TfwBVbcI1N54lNqfsAEL6A";
 	$data = array (
 		"key" => "TfwBVbcI1N54lNqfsAEL6A",
 		"message" =>
 			array (
-				"html"=> "this is the emails html content",
-		    	"text"=> "this is the emails text content",
-		    	"subject" => "this is the subject",
-		    	"from_email" => "mcafee.sam@gmail.com",
-		    	"from_name" => "John",
-		    	"to" => array(
-		    				array("email" => "sam@radicalfusion.net", "name" => "Bob"),
-		    				array("email" => "sam@radicalfusion.net", "name" => "Bob")
-		    			),
+				"html"=> $values['message_html_body'],
+		    	"text"=> $values['message_text_body'],
+		    	"subject" => $values['message_subject'],
+		    	"from_email" => "info@galaxylearn.com",
+		    	"from_name" => "Time Machine",
+		    	"to" => $values['message_recipients'],
 		    	"headers" => array()
 		    ),
 		"async" => "false"
