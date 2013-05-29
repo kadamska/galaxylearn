@@ -103,12 +103,12 @@ function activate_user($uid) {
 	$user = json_decode($User, true);
 	$user["authorized"] = "1";
 	$result = json_decode($UserService->service_update($uid, $user));
-	if ($result) {
+	if ($user['email']) {
 		$email_values = array(
-				'message_html_body' => "You may now log into your account.",
+				'message_html_body' => "You may now log into your account. <a href='" . $_SERVER['HTTP_HOST'] . APPLICATION_ROOT . "/sign-in.php'>Galaxy Learn</a>",
 				'message_subject' => "Welcome to GL Timemachine",
 				'message_recipients' => array(
-				    				array("email" => $user["email"])
+				    				array("email" => $user['email'])
 				    			)
 			);
 		send_email($email_values);
@@ -147,8 +147,9 @@ function send_email($values) {
 	    'Content-Type: application/json',                                                                                
 	    'Content-Length: ' . strlen($postfields))                                                                       
 	);                                                                                                                   
-	
+	error_log("message sent through Mandrill: ". $postfields);
 	$result = curl_exec($ch);
+	error_log("result from Mandrill: ". $result);
 	curl_close($ch);
     return $result;
 }
