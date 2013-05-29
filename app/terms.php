@@ -5,11 +5,11 @@ require_once "_config.php";
 if ($_REQUEST['activate-submit']) {
 
 	activate_user($_REQUEST['uid']);
-	header("Location: /");
+	header("Location:"  . APPLICATION_ROOT . "/");
 }
 
 if (!$_REQUEST['uid']) {
-	header("Location: /");
+	header("Location: " . APPLICATION_ROOT . "/");
 }
 
 require "header.php";

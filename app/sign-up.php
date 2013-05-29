@@ -9,7 +9,7 @@ if ($_REQUEST['signup-submit']) {
 	if ($error == "") {
 
 		// display confirmation
-		header("Location: confirmation.php");
+		header("Location: " . APPLICATION_ROOT . "/confirmation.php");
 	}
 }
 require "header.php";
