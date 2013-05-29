@@ -19,7 +19,7 @@ require "header.php";
 
 					<form action="sign-in.php" method="POST">
 						<label>Your email address</label>
-						<input type="text" name="email" value="<?=$_REQUEST['email'] ?>">
+						<input type="text" name="email" value="<?php echo $_REQUEST['email']; ?>">
 						<label>Your password</label>
 						<input type="password" name="password" value="<?=$_REQUEST['password'] ?>">
 						<br>

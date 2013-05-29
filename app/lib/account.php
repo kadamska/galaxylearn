@@ -80,7 +80,7 @@ function authenticate() {
 }
 
 function send_parent_email($user_id) {
-	$url = $_SERVER["HTTP_HOST"] . "/terms.php?uid=" . $user_id;
+	$url = $_SERVER["HTTP_HOST"] . APPLICATION_ROOT. "/terms.php?uid=" . $user_id;
 	$link = "<a href='" . $url . "'>Click here</a>";
 	$email_values = array(
 			'message_html_body' => $link . " to read and agree to the Terms of Service.",
