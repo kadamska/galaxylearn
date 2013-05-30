@@ -68,7 +68,7 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
             $scope.visible = "display:none;";
         }
         $scope.story.visible = "none";
-        if (data.user_id == $scope.story.user && $scope.story.status == 1) {
+        if (data.user_id == $scope.story.user && $scope.story.status == 0) {
             $scope.story.visible = "visible";
         }
     });

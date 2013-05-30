@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"RE",
+				"_REQUEST"
+			],
+			[
 				"em",
 				"email_values"
 			],
@@ -26,10 +34,6 @@
 			[
 				"dir",
 				"Directives"
-			],
-			[
-				"_",
-				"_SESSION"
 			],
 			[
 				"op",
@@ -183,30 +187,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/lib/account.php",
-			"settings":
-			{
-				"buffer_size": 4598,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/test.php",
-			"settings":
-			{
-				"buffer_size": 1109,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/sign-in.php",
-			"settings":
-			{
-				"buffer_size": 844,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -276,43 +256,44 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
+		"/Library/WebServer/Documents/timemachinecode/app/controlpanel.php",
+		"/Library/WebServer/Documents/timemachinecode/app/about.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/story.html",
+		"/Library/WebServer/Documents/timemachinecode/app/js/controllers.js",
+		"/Library/WebServer/Documents/timemachinecode/app/data.php",
+		"/Library/WebServer/Documents/timemachinecode/app/workbench.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/admin.html",
+		"/Library/WebServer/Documents/timemachinecode/app/header.php",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/era.html",
+		"/Library/WebServer/Documents/timemachinecode/app/js/directives.js",
+		"/Library/WebServer/Documents/timemachinecode/app/partials/story-new.html",
+		"/Library/WebServer/Documents/timemachinecode/app/sign-up.php",
+		"/Library/WebServer/Documents/timemachinecode/app/test.php",
+		"/Library/WebServer/Documents/timemachinecode/app/terms.php",
+		"/Library/WebServer/Documents/timemachinecode/app/_config.php",
+		"/Library/WebServer/Documents/timemachinecode/app/sign-in.php",
+		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
+		"/Library/WebServer/Documents/timemachinecode/app/admin.php",
+		"/Library/WebServer/Documents/timemachinecode/index.php",
+		"/Library/WebServer/Documents/timemachinecode/index.html",
 		"/Library/WebServer/Documents/timemachinecode/app/mailtest.php",
 		"/Library/WebServer/Documents/timemachinecode/app/vendor/composer/autoload_classmap.php",
 		"/Library/WebServer/Documents/timemachinecode/app/composer.json",
-		"/Library/WebServer/Documents/timemachinecode/app/lib/account.php",
-		"/Library/WebServer/Documents/timemachinecode/app/data.php",
-		"/Library/WebServer/Documents/timemachinecode/app/js/controllers.js",
 		"/Library/WebServer/Documents/timemachinecode/app/js/app.js",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/story.html",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/admin.html",
-		"/Library/WebServer/Documents/timemachinecode/app/js/directives.js",
 		"/Library/WebServer/Documents/timemachinecode/logfile",
 		"/Library/WebServer/Documents/timemachinecode/app/js/services.js",
-		"/Library/WebServer/Documents/timemachinecode/app/admin.php",
 		"/Library/WebServer/Documents/timemachinecode/app/partials/submitted.html",
 		"/Library/WebServer/Documents/timemachinecode/app/partials/drafts.html",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/era.html",
-		"/Library/WebServer/Documents/timemachinecode/app/workbench.php",
-		"/Library/WebServer/Documents/timemachinecode/app/lib/service.php",
-		"/Library/WebServer/Documents/timemachinecode/app/partials/story-new.html",
-		"/Library/WebServer/Documents/timemachinecode/app/controlpanel.php",
-		"/Library/WebServer/Documents/timemachinecode/app/header.php",
 		"/Library/WebServer/Documents/timemachinecode/app/footer.php",
 		"/Library/WebServer/Documents/timemachinecode/app/partials/story-edit.html",
-		"/Library/WebServer/Documents/timemachinecode/app/about.php",
 		"/Library/WebServer/Documents/timemachinecode/app/partials/home.html",
 		"/Library/WebServer/Documents/timemachinecode/app/index.php",
-		"/Library/WebServer/Documents/timemachinecode/index.php",
 		"/Library/WebServer/Documents/timemachinecode/app/postdata.php",
 		"/Library/WebServer/Documents/timemachinecode/app/_index.html",
 		"/Library/WebServer/Documents/timemachinecode/app/data/eras.json",
 		"/Library/WebServer/Documents/timemachinecode/app/confirmation.php",
-		"/Library/WebServer/Documents/timemachinecode/app/_config.php",
 		"/Library/WebServer/Documents/timemachinecode/app/sign-out.php",
-		"/Library/WebServer/Documents/timemachinecode/app/sign-in.php",
-		"/Library/WebServer/Documents/timemachinecode/app/sign-up.php",
-		"/Library/WebServer/Documents/timemachinecode/app/terms.php",
-		"/Library/WebServer/Documents/timemachinecode/app/test.php",
 		"/Library/WebServer/Documents/timemachinecode/app/phpinfo.php",
 		"/Library/WebServer/Documents/timemachinecode/app/img/glyphicons-halflings.png",
 		"/Library/WebServer/Documents/timemachinecode/app/lib/session.php",
@@ -363,6 +344,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"submit for review",
+			"admin",
 			"mail(",
 			"error_log",
 			"error",
@@ -390,89 +373,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/lib/account.php",
-					"settings":
-					{
-						"buffer_size": 4598,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2799,
-								2799
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1068.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/test.php",
-					"settings":
-					{
-						"buffer_size": 1109,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								443,
-								443
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/sign-in.php",
-					"settings":
-					{
-						"buffer_size": 844,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								544,
-								544
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
