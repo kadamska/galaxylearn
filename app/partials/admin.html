@@ -1,8 +1,8 @@
-<div class="">
+<div>
 	<h4>Admin Controls:</h4>
 	
-	<ul>
-		<li><button ng-click="approve({{story._id.$oid}})">Approve</button></li>
-		<li><button ng-click="reject({{story._id.$oid}})">Reject</button></li>
+	<ul >
+		<li><a href="data.php?type=acceptStory&id={{story._id.$oid}}">Approve</a></li>
+		<li><a href="data.php?type=rejectStory&id={{story._id.$oid}}">Reject</a></li>
 	</ul>
 </div>

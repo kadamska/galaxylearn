@@ -14,7 +14,7 @@ function EraCtrl($scope, $routeParams, $http) {
     });
 }
 
-function StoryCtrl($scope, $routeParams, $http) {
+function StoryCtrl($scope, $routeParams, $http, $location) {
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
             $scope.story = data;
     });
@@ -54,6 +54,7 @@ function StoryCtrl($scope, $routeParams, $http) {
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
                 alert("Your story has been submitted.");
+                $location.path('#/submitted').replace();
             }).error(function (response) {
                 alert("There was a problem submitting your story. Please try again later.");
             });
@@ -65,6 +66,10 @@ function StoryCtrl($scope, $routeParams, $http) {
         }
         else {
             $scope.visible = "display:none;";
+        }
+        $scope.story.visible = "none";
+        if (data.user_id == $scope.story.user && $scope.story.status == 1) {
+            $scope.story.visible = "visible";
         }
     });
 
@@ -87,7 +92,7 @@ function StoryNewCtrl ($scope, $routeParams, $http) {
             url: 'data.php?type=newstory',
             method: "POST",
             data: {
-                'era_id': $scope.story.era_id,
+                'era_id': $scope.era_id,
                 'body': $scope.story.body,
                 'img': $scope.story.img, 
                 'title': $scope.story.title},
@@ -113,3 +118,10 @@ function SubmittedCtrl($scope, $routeParams, $http) {
             $scope.stories = data;
     });
 }
+
+function AdminReviewCtrl($scope, $routeParams, $http) {
+    $http.get('data.php?type=submittedstories').success(function(data) {
+            $scope.stories = data;
+    });
+}
+

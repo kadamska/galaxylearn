@@ -1,13 +1,10 @@
 'use strict';
 
 /* Directives */
-wbapp.directive('admin', function() {
+myapp.directive('admin', function() {
 	return {
-		restrict: 'E',
-		replace: true,
+		restrict: 'EC',
 		templateUrl: 'partials/admin.html',
-		scope: {
-			approve: '&'
-		}
+		
 	}
 });

@@ -82,6 +82,38 @@ if ($_REQUEST['type'] == "submitStory") {
 
 }
 
+if ($_REQUEST['type'] == "acceptStory") {
+	if (!$_SESSION['admin']) {
+		header("Location: " . APPLICATION_ROOT);
+	}
+	$DataService = new DataService('stories');
+	$story = $DataService->service_get_one($_REQUEST['id']);
+	$array = json_decode($story, TRUE);
+	$array['status'] = 2;
+	$story = $DataService->service_update($_REQUEST['id'],	$array);
+	header("Location: " . APPLICATION_ROOT. "workbench.php");
+	}
+
+if ($_REQUEST['type'] == "rejectStory") {
+	if (!$_SESSION['admin']) {
+		header("Location: " . APPLICATION_ROOT. "workbench.php");
+	}
+	$DataService = new DataService('stories');
+	$story = $DataService->service_get_one($_REQUEST['id']);
+	$array = json_decode($story, TRUE);
+	$array['status'] = 3;
+	$story = $DataService->service_update($_REQUEST['id'],	$array);
+	header("Location: " . APPLICATION_ROOT);
+}
+
+if ($_REQUEST['type'] == "submittedstories") {
+	$DataService = new DataService('stories');
+	$params = array("status" => 1);
+	$stories = $DataService->service_get($params);
+	echo $stories;
+
+}
+
 if ($_REQUEST['type'] == "authenticated") {
 	$array = array('user_id' =>  $_SESSION['user_id'], 'admin' => $_SESSION['admin']);
 	echo json_encode($array);

@@ -5,11 +5,11 @@
 			<div class="row">
 				<div class="span9 media">
 					<span style="{{visible}}">
-						<admin></admin>
+						<div class="admin"></div>
 					</span>
 					<img src="{{story.img}}" class="media-object pull-left">
 					<p>{{story.body}}</p>
-						<button class="btn-large btn-primary" ng-click="submitForReview()">Submit for Review</button>
+						<button style="display:{{story.visible}}" class="btn-large btn-primary" ng-click="submitForReview()">Submit for Review</button>
 				</div>
 
 				<div class="span3">
