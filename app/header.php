@@ -13,7 +13,7 @@
       
       <div class="span7">
           <br>
-        <h1 style="font-size:90px;">Time Machine</h1>
+        <h1 style="font-size:90px;" onclick="window.location.href='<?php echo APPLICATION_ROOT; ?>'">Time Machine</h1>
         <br>
           <h2 style="font-size:60px; color:#dba622" class="offset2">Go somewhen.</h2>
       </div>
