@@ -13,7 +13,7 @@ require "header.php";
 
 						<ul class="thumbnails" >
 						    <li class="span1" ng-repeat="era in eras">
-						    <a class="thumbnail" href="#/era/{{era.id}}/{{era.name}}" ><img src="img/{{era.img}}" alt=""  class="img-rounded"/></a>{{era.name}}
+						    <a class="thumbnail" href="#/era/{{era.id}}/{{era.name}}" ><img src="img/{{era.img}}"/></a>{{era.name}}
 						    </li>
 						</ul>
 						<div>
