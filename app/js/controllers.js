@@ -34,6 +34,7 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
                 alert("Your story has been saved.");
+                window.location.href='workbench.php';
             }).error(function (response) {
                 alert("There was a problem saving your story. Please try again later.");
         });
