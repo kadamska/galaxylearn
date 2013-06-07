@@ -10,12 +10,18 @@ function MainCtrl($scope, $http, $location) {
 
 function EraCtrl($scope, $routeParams, $http) {
     $http.get('data.php?type=stories&eraId='+ $routeParams.eraId).success(function(data) {
-            $scope.stories = data;
+        if (data.img == null) {
+            data.img = 'img/workbenchimage.png';
+        }
+        $scope.stories = data;
     });
 }
 
 function StoryCtrl($scope, $routeParams, $http, $location) {
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
+        if (data.img == null) {
+            data.img = 'img/workbenchimage.png';
+        }
             $scope.story = data;
     });
 
@@ -100,6 +106,7 @@ function StoryNewCtrl ($scope, $routeParams, $http) {
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
                 alert("Your story has been saved.");
+                window.location.href='workbench.php';
             }).error(function (response) {
                 alert("There was a problem saving your story. Please try again later.");
             });
