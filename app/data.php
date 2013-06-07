@@ -92,19 +92,19 @@ if ($_REQUEST['type'] == "acceptStory") {
 	$array['status'] = 2;
 	$array['era_id'] = intval($array['era_id']);
 	$story = $DataService->service_update($_REQUEST['id'],	$array);
-	header("Location: " . APPLICATION_ROOT. "workbench.php");
+	header("Location: " . APPLICATION_ROOT. "/workbench.php");
 	}
 
 if ($_REQUEST['type'] == "rejectStory") {
 	if (!$_SESSION['admin']) {
-		header("Location: " . APPLICATION_ROOT. "workbench.php");
+		header("Location: " . APPLICATION_ROOT. "/workbench.php");
 	}
 	$DataService = new DataService('stories');
 	$story = $DataService->service_get_one($_REQUEST['id']);
 	$array = json_decode($story, TRUE);
 	$array['status'] = 3;
 	$story = $DataService->service_update($_REQUEST['id'],	$array);
-	header("Location: " . APPLICATION_ROOT. "workbench.php");
+	header("Location: " . APPLICATION_ROOT. "/workbench.php");
 }
 
 if ($_REQUEST['type'] == "submittedstories") {
