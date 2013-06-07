@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Time Machine - Go Somewhen</title>
   <link rel="stylesheet" href="css/app.css"/>
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body style="background-color:#000; color:#fff;">
 <div class="container">
