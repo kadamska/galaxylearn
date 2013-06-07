@@ -68,7 +68,7 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
         }
 
     $http.get('data.php?type=authenticated').success(function(data) {
-        if (data.admin == '1') {
+        if (data.admin == '1' && $scope.story.status == 1) {
             $scope.visible = "display:visible;";
         }
         else {
