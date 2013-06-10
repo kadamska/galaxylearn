@@ -92,8 +92,20 @@ if ($_REQUEST['type'] == "acceptStory") {
 	$array['status'] = 2;
 	$array['era_id'] = intval($array['era_id']);
 	$story = $DataService->service_update($_REQUEST['id'],	$array);
-	header("Location: " . APPLICATION_ROOT. "/workbench.php");
-	}
+	$UserService = new DataService("users");
+	$user = $UserService->service_get_one($array['user']);
+	$user = json_decode($user, TRUE);
+	$email_values = array(
+				'message_html_body' => "Congratulations! Your adventure has been reviewed and accepted by the Time Machine and everyone can now enjoy it.",
+				'message_subject' => "Time Machine Submission Accepted",
+				'message_recipients' => array(
+				    				array("email" => $user['email'])
+				    			)
+			);
+	send_email($email_values);
+	header("Location: workbench.php");
+}
+
 
 if ($_REQUEST['type'] == "rejectStory") {
 	if (!$_SESSION['admin']) {
@@ -104,7 +116,18 @@ if ($_REQUEST['type'] == "rejectStory") {
 	$array = json_decode($story, TRUE);
 	$array['status'] = 3;
 	$story = $DataService->service_update($_REQUEST['id'],	$array);
-	header("Location: " . APPLICATION_ROOT. "/workbench.php");
+	$UserService = new DataService("users");
+	$user = $UserService->service_get_one($array['user']);
+	$user = json_decode($user, TRUE);
+	$email_values = array(
+				'message_html_body' => "Sorry! Your adventure has been reviewed but was accepted by the Time Machine.",
+				'message_subject' => "Time Machine Submission Rejected",
+				'message_recipients' => array(
+				    				array("email" => $user['email'])
+				    			)
+			);
+	send_email($email_values);
+	header("Location: workbench.php");
 }
 
 if ($_REQUEST['type'] == "submittedstories") {
