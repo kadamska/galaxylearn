@@ -1,5 +1,10 @@
 <?php
 
+// Stories Statuses
+// Draft 	 = 0
+// Submitted = 1
+// Published = 2
+
 require_once "_config.php";
 
 if ($_REQUEST['type'] == "eras") {
@@ -49,21 +54,39 @@ if ($_REQUEST['type'] == "newstory") {
 	$inputJSON = file_get_contents('php://input');
 	$input= json_decode( $inputJSON, TRUE );
 	$DataService = new DataService('stories');
-	$data =	array (
-				"user" => $_SESSION['user_id'],
-				"era_id" =>  $input['era_id'], 
-				"title" =>  $input['title'], 
-				"img" =>  $input['img'],
-				"status" => 0, 
-				"body" => $input['body']);
+	if (!$_SESSION['admin']) {
+		$data =	array (
+			"user" => $_SESSION['user_id'], // if is admin, doesn't change this.
+			//"username" => $_SESSION['email'],
+			"era_id" =>  $input['era_id'], 
+			"title" =>  $input['title'], 
+			"img" =>  $input['img'],
+			"status" => 0, 
+			"body" => $input['body'],
+			"allages" =>  $input['allages'],
+			"age" =>  $input['age']);
+	} else {
+		$data =	array (
+			"user" => $_SESSION['user_id'], 
+			//"username" => $_SESSION['email'],
+			"era_id" =>  $input['era_id'], 
+			"title" =>  $input['title'], 
+			"img" =>  $input['img'],
+			"status" => 1, 
+			"body" => $input['body'],
+			"allages" =>  $input['allages'],
+			"age" =>  $input['age']);		
+	}
 	if ($input['id'] != '') {
 		$story = $DataService->service_update($input['id'],	$data);
+		$actualStory = $DataService->service_get_one($input['id']);		
 	}
 	else {
 		$story = $DataService->service_post($data);
+		$actualStory = $DataService->service_get_one($story);
 	}
-		
-
+	echo $actualStory;	
+	
 }
 
 if ($_REQUEST['type'] == "submitStory") {
@@ -72,9 +95,12 @@ if ($_REQUEST['type'] == "submitStory") {
 	$DataService = new DataService('stories');
 	$data =	array (
 				"user" => $_SESSION['user_id'],
+				"username" => $_SESSION['email'],
 				"era_id" =>  $input['era_id'], 
 				"title" =>  $input['title'], 
 				"img" =>  $input['img'],
+				"age" =>  $input['age'],
+				"allages" =>  $input['allages'],
 				"status" => $input['status'], 
 				"body" => $input['body']);
 	$story = $DataService->service_update($input['id'],	$data);
@@ -120,7 +146,7 @@ if ($_REQUEST['type'] == "rejectStory") {
 	$user = $UserService->service_get_one($array['user']);
 	$user = json_decode($user, TRUE);
 	$email_values = array(
-				'message_html_body' => "Sorry! Your adventure has been reviewed but was accepted by the Time Machine.",
+				'message_html_body' => "Your Adventure was not accepted by the Time Machine. Please review Terms of Service and try again. Thanks!",
 				'message_subject' => "Time Machine Submission Rejected",
 				'message_recipients' => array(
 				    				array("email" => $user['email'])
@@ -128,6 +154,31 @@ if ($_REQUEST['type'] == "rejectStory") {
 			);
 	send_email($email_values);
 	header("Location: workbench.php");
+}
+
+if ($_REQUEST['type'] == "deleteStory") {
+	if (!$_SESSION['admin']) {
+		header("Location: " . APPLICATION_ROOT. "/workbench.php");
+	}
+	$DataService = new DataService('stories');
+	$story = $DataService->service_get_one($_REQUEST['id']);
+	$array = json_decode($story, TRUE);
+
+	$UserService = new DataService("users");
+	$user = $UserService->service_get_one($array['user']);
+	$user = json_decode($user, TRUE);
+	$email_values = array(
+				'message_html_body' => "Sorry! Your adventure has been deleted by the Time Machine.",
+				'message_subject' => "Time Machine Submission Deleted",
+				'message_recipients' => array(
+				    				array("email" => $user['email'])
+				    			)
+			);
+	send_email($email_values);
+
+	$deletion = $DataService->service_delete($_REQUEST['id']);
+
+	header("Location: controlpanel.php");
 }
 
 if ($_REQUEST['type'] == "submittedstories") {

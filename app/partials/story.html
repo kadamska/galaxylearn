@@ -1,15 +1,31 @@
 <div ng-controller="StoryCtrl">
 	<div class="row">
-		<div class="span12">
+		<div class="span12" id="readStory">
 			<h2>{{story.title}}</h2>
+				<h5>By: {{story.username}}</h5>
+				<div class="deletebutton">
+					<a id="deleteStory" href="data.php?type=deleteStory&id={{story._id.$oid}}" class="btn btn-danger">Delete</a>
+				</div>				
 			<div class="row">
-				<div class="span12 media">
-					<span style="{{visible}}">
-						<div class="admin"></div>
-					</span>
+				<div class="span3">
 					<img width="200" src="{{story.img}}" class="media-object pull-left">
+				</div>
+				
+				<div class="span9">
+					<div style="{{visible}}">
+						<div class="admin">
+
+							<h4>Admin Controls:</h4>
+								[ <a href="data.php?type=acceptStory&id={{story._id.$oid}}">Approve</a> | <a href="data.php?type=rejectStory&id={{story._id.$oid}}">Reject</a> ]
+							</ul>
+
+						</div>
+					</div>
+					
+				
 					<p>{{story.body}}</p>
-						<button style="display:{{story.visible}}" class="btn-large btn-primary" ng-click="submitForReview()">Submit for Review</button>
+					<!--<button style="{{visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
+						<!--<button style="display:{{story.visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
 				</div>
 
 			</div>

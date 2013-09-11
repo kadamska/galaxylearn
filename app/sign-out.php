@@ -1,6 +1,7 @@
 <?php
-
 require "_config.php";
 
-logout();
+$url = $_GET['url'];
+logout($url);
+
 ?>

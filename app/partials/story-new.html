@@ -1,32 +1,99 @@
 <div ng-controller="StoryNewCtrl">
-	<div class="row">
+	
 		<div class="span12">
 			<h2>Create Story</h2>
 			<div class="row">
-				<div class="span9">
+				<div class="span12">
 					<form no-validate name="StoryEdit" class="simple-form">
-					        <label>Title</label><input name="title" type="text" ng-model="story.title" /><br />
-					        <label>Image URL</label><input name="img" type="text" ng-model="story.img" /><br />
+					        <label>Title</label><input style="width: 900px;" name="title" type="text" ng-model="story.title" /><br />
+					        <!--<label>Image URL</label>-->
+					        <input  name="img" style="width: 900px;" type="hidden" ng-model="story.img" />
 					        <label>Era</label>
-					        <select ng-model="era_id">
+					        <select style="width: 900px;" ng-model="era_id" name="era_id">
 					        	<option>select...</option>
 					        	<option value="{{era.id}}" ng-repeat="era in eras">{{era.name}}</option>
 					        </select>
-					        <label>Body</label><textarea name="body" rows="10" ng-model="story.body"></textarea><br/>
-					        <button class"btn btn-primary btn-large" ng-click="submit_story()">SAVE</button>
-					</form>
-				</div>
+					        <label>Body</label><textarea style="width: 900px;" name="body" rows="25" ng-model="story.body"></textarea><br/>
+					        
+					        <p>This adventure is intended for ages:</p>
+					        	<label class="radio">7-10
+					        		<input type="radio" name="age" id="ageOne" value="ageOne" ng-model="story.age"></label>
+  
+								<label class="radio">11-14
+					        		<input type="radio" name="age" id="ageTwo" value="ageTwo" ng-model="story.age"></label>
+	        
+	       		 				<label class="radio">14 and up
+					        		<input type="radio" name="age" id="ageThree" value="ageThree" ng-model="story.age"></label>
+					       	<br/>
+					        <p>Appropiate for all ages:</p>
+					        	<label class="checkbox">Yes
+					        		<input type="checkbox" name="allages" id="allages" ng-true-value="YES" ng-false-value="NO" ng-model="story.allages"></label>
+					        
 
-				<div class="span3">
-					<div class="media">
-					  <a class="pull-left" href="#">
-					    <img class="media-object" data-src="holder.js/64x64">
-					  </a>
-					  <div class="media-body">
-					    <h4 class="media-heading">Media heading</h4>
-					  </div>
-					</div>
+					        <input type="hidden" name="id" value="">
+					        <br/><br/>
+					        <button class="btn btn-primary btn-large" ng-click="submit_story()">SAVE</button>
+					        <!--<a id="previewButton" class="btn btn-info btn-large disabled" href="#">PREVIEW</a>-->
+					        <button class="btn btn-success btn-large" ng-click="submitForReview()">SUBMIT FOR REVIEW</button>
+					</form>
+					<hr>
+					<div id="uploadarea" ng-controller="FileUploadCtrl">
+						<p>Featured Image:</p>
+					    <div class="row hideuploader">
+					        <label for="fileToUpload">Select a File to Upload</label><br />
+					        <input type="file" ng-model-instant id="fileToUpload" onchange="angular.element(this).scope().setFiles(this)" />
+					    </div>
+					    <div id="dropbox" class="dropbox" ng-class="dropClass"><span>{{dropText}}</span></div>
+					    <div ng-show="files.length">
+					        <div ng-repeat="file in files.slice(0)">
+					            <span>{{file.webkitRelativePath || file.name}}</span>
+					            (<span ng-switch="file.size > 1024*1024">
+					                <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+					                <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+					            </span>)
+					        </div>
+					        <input type="button" ng-click="uploadFile()" value="Upload" />
+					        <div ng-show="progressVisible">
+					            <div class="percent">{{progress}}%</div>
+					            <div class="progress-bar">
+					                <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+					            </div>
+					        </div>
+					    </div>
+					    <div id="cropthis">
+					    	<div id="image_crop">
+					    		
+					    	</div>
+					    	<!--
+					    	<form action="uploads/crop.php" method="post">
+						    	<input type="text" id="image_path" name="image_path" />
+							    <input type="text" id="x" name="x" />
+							    <input type="text" id="y" name="y" />
+							    <input type="text" id="w" name="w" />
+							    <input type="text" id="h" name="h" />
+							    <input type="text" id="oring_w" name="oring_w" />
+							    <input type="text" id="oring_h" name="oring_h" />					    	
+						    	<button id="crop_this_image" class="btn btn-primary btn-large">CROP</button>
+						    	<button class="btn btn-danger btn-large">CANCEL</button>
+					    	</form>
+					    	-->
+					    </div>
+					</div>			
+							
 				</div>
+				<!--
+				<div class="span6" >
+
+					<h4>Live Preview</h4>
+					<div class="live-preview">
+						<h2 class="title-preview"></h2>
+						<div class="img-preview"></div>
+						<pre class="content-preview">{{story.body}}</pre>
+					</div>
+
+
+				</div>
+				-->
 			</div>
 		</div>
 	</div>

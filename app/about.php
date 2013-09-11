@@ -10,16 +10,21 @@ require "header.php";
 
 			<div class="row" ng-app="myApp">
 				<div class="span12"  ng-controller="MainCtrl">
-					<h3 class="offset1">About</h3>
-					<div class="span6">
+					<h2>Learn more about the Time Machine</h2>
+					<hr>
+				<div class="row">	
+					<div id="aboutPage" class="span12">
 					
-					<p>Galaxy Learn’s Time Machine is a safe, age appropriate environment for learners, ages 7 to 17. Your contributed content will be reviewed, and if material is not appropriate for all ages, it will not be posted.</p>
-					<p>The Time Machine Historical Simulator is a free online affinity space where learners, ages 7-17 can create interactive media collaboratively. A combination of fanfiction, presentation tool, Wikipedia, storyboard and game engine, our process will enable users to collaborate on research, writing, storyboards, and eventuallyt build a playable text/graphics computer games.</p>
-					<p>Learners self-select their roles and make choices about the work they want to do, how much time they spend on it, and the way they do it.</p>
-<p>Skills practiced and mastered in the Time Machine include:</p>
-					</p>
-					</div>
-					<div class="span5">
+						<p><u>The Time Machine Historical Simulator</u> is a free online affinity space where learners, ages 7-18 can collaborate to create by a child working solo, by an informal group formed online, or by whole classrooms.</p>
+						
+						<p><u>Students</u> are encouraged to keep their own copies of their writing, research and image collections, to form a personal portfolio.</p>
+
+						<p><u>Parents and teachers</u> are encouraged to give as specific prompts as they feel are helpful, from open-ended choice to challenges for learners.</p>
+						
+						<p><u>Safety:</u> There is no direct communication between users, each user has her own anonymous screen name, and all material published is curated by an adult guide and Galaxy Learn.</p>
+
+						<p>Skills practiced and mastered in the Time Machine include:</p>
+
 						<ul>
 							<li>research and scholarship</li>
 							<li>writing and editing</li>
@@ -32,7 +37,17 @@ require "header.php";
 							<li>multimedia presentations</li>
 							<li>game design</li>
 						</ul>
+
 					</div>
+
+				</div>
+				<div id="contactButton" >
+					<p><b>Teachers, schools, other institutional users:</b> Please contact Galaxy Learn for special pricing and custom-configured systems and analytics.</p>
+					<a href="mailto:galaxylearn@gmail.com" class="btn btn-large btn-primary">Contact Us</a>
+				</div>
+				
+				<p>Please be sure to review our <a href="tos.php">terms of use</a>.</p>
+				
 				</div>
 			</div>
 		  

@@ -7,6 +7,10 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ 
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
+
+
 
 .clearfix {
   *zoom: 1;
@@ -3945,6 +3949,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a {
   display: block;
+  font-size: 16px;
 }
 
 .nav > li > a:hover,
@@ -5549,7 +5554,6 @@ input[type="submit"].btn.btn-mini {
   display: block;
   padding: 4px;
   line-height: 20px;
-  border: 1px solid #ddd;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -5564,7 +5568,6 @@ input[type="submit"].btn.btn-mini {
 
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #0088cc;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
      -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
           box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
