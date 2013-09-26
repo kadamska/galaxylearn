@@ -154,7 +154,14 @@ var myapp = angular.module('myApp', []).
     when('/era/:eraId/:eraName', {templateUrl: 'partials/era.html', controller: EraCtrl}).
     when('/story/:storyId', {templateUrl: 'partials/story.html', controller: StoryCtrl}).
     otherwise({redirectTo: '/home'});
-  }]);
+  }])
+  .filter('nl2br', function() {
+    return function(text) {
+        if (text !== undefined) {
+            return text.replace(/\n/g, '<br />');
+        }
+    };
+  });
 
 // Declare app level module which depends on filters, and services
 var wbapp = angular.module('wbApp', ["ngUpload"]).
@@ -167,7 +174,13 @@ var wbapp = angular.module('wbApp', ["ngUpload"]).
     when('/story/edit/:storyId', {templateUrl: 'partials/story-edit.html', controller: StoryCtrl}).
     when('/story/:storyId', {templateUrl: 'partials/story.html', controller: StoryCtrl}).
     otherwise({redirectTo: '/wbhome'});
-  }]);
+  }]).filter('nl2br', function() {
+	    return function(text) {
+	        if (text !== undefined) {
+	            return text.replace(/\n/g, '<br />');
+	        }
+	    };
+	  });
 
 // Declare app level module which depends on filters, and services
 var wbapp2 = angular.module('wbApp2', ["ngUpload"]).
@@ -178,7 +191,13 @@ var wbapp2 = angular.module('wbApp2', ["ngUpload"]).
     when('/story/create', {templateUrl: 'partials/story-new.html', controller: StoryNewCtrl}).
     when('/story/edit/:storyId', {templateUrl: 'partials/story-edit.html', controller: StoryCtrl}).
     when('/story/:storyId', {templateUrl: 'partials/story.html', controller: StoryCtrl});
-  }]);  
+  }]).filter('nl2br', function() {
+	    return function(text) {
+	        if (text !== undefined) {
+	            return text.replace(/\n/g, '<br />');
+	        }
+	    };
+	  });  
 
 FileUploadCtrl.$inject = ['$scope'];
 
@@ -320,5 +339,8 @@ function FileUploadCtrl(scope) {
 }
 
 // Cropping Image
+
+
+
 
 

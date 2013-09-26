@@ -22,8 +22,7 @@
 						</div>
 					</div>
 					
-				
-					<p>{{story.body}}</p>
+					<p ng-bind-html-unsafe="story.body | nl2br"></p>
 					<!--<button style="{{visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
 						<!--<button style="display:{{story.visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
 				</div>

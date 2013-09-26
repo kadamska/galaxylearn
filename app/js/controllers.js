@@ -51,14 +51,17 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
             */
         }
 
-        console.log('Era ID: '+ data.era_id);
+        //console.log('Era ID: '+ data.era_id);
 
         jQuery('input[name="era_id"]').val(data.era_id);
 
         if (data.status == "1"){
             jQuery('#submitbtn').hide();
         }
-            $scope.story = data;
+        
+        //console.log(data);
+        
+        $scope.story = data;
     });
 
     
@@ -86,7 +89,7 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
     } */
 
     $scope.submitForReview = function() {
-        console.log('submitted');
+        //console.log('submitted');
         $http({
             url: 'data.php?type=submitStory',
             method: "POST",
@@ -127,11 +130,11 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
     });
 
     $scope.approve = function(id) {
-        console.log(id + ' approved');
+        //console.log(id + ' approved');
     }
 
     $scope.reject = function(id) {
-        console.log(id + ' rejected');
+        //console.log(id + ' rejected');
     }
 
     $scope.submit_story =  function () {
@@ -160,7 +163,7 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
     };
 
     jQuery('#workbench-links button').click(function(){
-        console.log('canceling interval..');
+        //console.log('canceling interval..');
         clearInterval(startSaving);
     });    
 
@@ -183,8 +186,6 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
     });
 
     $scope.submitForReview = function() {
-        console.log('submitted');
-        console.log('submitted');
         $http({
             url: 'data.php?type=submitStory',
             method: "POST",
@@ -235,7 +236,7 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
     };
 
     $scope.autosave_submit_story =  function () {
-        console.log('sending this: '+ jQuery('form[name=StoryEdit] input[name=id]').val() );
+        //console.log('sending this: '+ jQuery('form[name=StoryEdit] input[name=id]').val() );
         $http({
             url: 'data.php?type=newstory',
             method: "POST",
@@ -251,11 +252,11 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
             },
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                console.log("Your story has been autosaved.");
+                //console.log("Your story has been autosaved.");
                 jQuery('form[name=StoryEdit] input[name=id]').val(response._id.$oid);
                 //jQuery('form[name=StoryEdit] #previewButton').attr('href', '#/story/'+response._id.$oid).removeClass('disabled');
             }).error(function (response) {
-                console.log("There was a problem autosaving your story. Please try again later.");
+                //console.log("There was a problem autosaving your story. Please try again later.");
             });
     };    
 
@@ -269,7 +270,7 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
     });
 
     jQuery('#workbench-links button').click(function(){
-        console.log('canceling interval..');
+        //console.log('canceling interval..');
         clearInterval(startSaving);
     });    
 

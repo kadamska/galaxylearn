@@ -1,128 +1,188 @@
 <?php
 
 require "service.php";
+require "email.php";
 
-function validate_signup() {
+function validate_signup() 
+{
 	// validate fields
-	if (!$_REQUEST['email'] || !$_REQUEST['parent_email'] || !$_REQUEST['password']) {
-		$error ="Please fill in all fields.";
+	if (!$_REQUEST['email'] || !$_REQUEST['parent_email'] || !$_REQUEST['password'] || !$_REQUEST['screenName']) {
+		$error = "Please fill in all fields.";
 		return $error;
 	}
 
 	if ($_REQUEST['email'] == $_REQUEST['parent_email']) {
-		$error .=" Email addressses must be different.";
+		$error = "Email addresses must be different.";
 		return $error;
 	}
 
 	// check availability
 	if (check_email_availability() == false) {
-		$error ="That email address is already in use. Please use an alternate email.";
+		$error = "The email \"" . $_REQUEST['email'] . "\" is already in use. Please enter a different email.";
 		return $error;
 	}
 
-	// register
-	if (register_user() == false) {
+	// register and email parent
+	if (!registerUser($_REQUEST['email'], $_REQUEST['parent_email'], $_REQUEST['password'], $_REQUEST['screenName'])) {
 		$error = "Cannot register user.";
 		return $error;
 	}
-	// email parent
-
+	
 	return false;
 }
 
-function check_email_availability() {
+function check_email_availability() 
+{
 	$UserService = new DataService('users');
-	$matches = json_decode(
-		$UserService->service_get(
-			array('email' => $_REQUEST['email'])
-		)
-	);
-	if( empty($matches)) {
+	$matches = json_decode($UserService->service_get(array('email' => $_REQUEST['email'])), true);
+	if (empty($matches)) {
 		return true;
 	}
+	
+	// delete TODO test
+	$UserService->service_delete($matches[0]['_id']['$oid']);
+	return true;
+	
 	return false;
 }
 
-function register_user() {
-	$UserService = new DataService('users');
+/**
+ * Register user
+ * @param string $userEmail user email
+ * @param string $parentEmail parent email
+ * @param string $password password
+ * @return boolean true if registered, false otherwise
+ */
+function registerUser($userEmail, $parentEmail, $password, $screenName)
+{
+	$userService = new DataService('users');
 	$data = array(
-			'email' => $_REQUEST['email'],
-			'parent_email' => $_REQUEST['parent_email'],
-			'password' => $_REQUEST['password']
-		);
-	$user_id = $UserService->service_post($data);
-	if ($user_id) {
-		if (!send_parent_email($user_id)) {
-			return faslse;
+		'email' => $userEmail,
+		'parent_email' => $parentEmail,
+		'password' => $password,
+	    'screen_name' => $screenName
+	);
+	
+	$userId = $userService->service_post($data);
+	
+	if ($userId) {
+		if (!send_parent_email($userId, $parentEmail)) {
+		    // roll back user creation if the email has not been sent
+		    $userService->service_delete($userId);
+			return false;
 		}
 		return true;
 	}
+	
 	return false;
 }
 
-function authenticate() {
+/**
+ * Authenticate user
+ * @return string
+ */
+function authenticate() 
+{
 	$UserService = new DataService('users');
 	$matches = json_decode(
 		$UserService->service_get(
 			array('email' => $_REQUEST['email'], 'password' => $_REQUEST['password'])
 		), true
 	);
-	if( empty($matches)) {
-		return $error = "We could not find an account with that email/password combination. Please try again.";
+	
+	if (empty($matches)) {
+		return 'We could not find an account with that email/password combination. Please try again.';
 	}
-	if( $matches[0]['authorized'] == false) {
-		return $error = "Your parent or guardian has not authorized this account yet.";
+	
+	$user = $matches[0];
+	//print_r($user);
+	//return;
+	
+	if (!array_key_exists('authorized', $user) || !$user['authorized']) {
+		return 'Your parent or guardian has not authorized this account yet.';
+		//activateUser('52360878e4b0d93062d9e134');
 	}
-	$_SESSION['email'] = $_REQUEST['email'];
-	$_SESSION['user_id'] = $matches[0]['_id']['$oid'];
-	$_SESSION['admin'] = $matches[0]['admin'];
+	
+	$_SESSION['user_id'] = $user['_id']['$oid'];
+	$_SESSION['email'] = $user['email'];
+	$_SESSION['admin'] = $user['admin'];
+	$_SESSION['screenName'] = $user['screen_name'];
+	
 	header("Location: controlpanel.php");
 }
 
-function send_parent_email($user_id) {
-	$url = $_SERVER["HTTP_HOST"] . APPLICATION_ROOT. "/terms.php?uid=" . $user_id;
-	$link = "<a href='" . $url . "'>Click here</a>";
-	$email_values = array(
-			'message_html_body' => $link . " to read and agree to the Terms of Service.",
-			'message_subject' => "Welcome to Galaxy Learn - Time Machine",
-			'message_recipients' => array(
-			    				array("email" => $_REQUEST['parent_email'])
-			    			)
-		);
+/**
+ * Send registration email to parent
+ * @param integer $user_id child user id
+ * @return boolean true if sent, false otherwise
+ */
+function send_parent_email($user_id, $parentEmail) 
+{
+	$tosLink = $_SERVER["HTTP_HOST"] . APP_WEB_ROOT. "/terms.php?uid=" . $user_id;
+	$websiteLink = $_SERVER["HTTP_HOST"] . APP_WEB_ROOT . "/index.php";
 	
-	$sent = send_email($email_values);
-	if (!$sent) {
-		return false;
-	}
-	return true;
+	$emailBody = "<h3>Welcome to Galaxy Learn - Time Machine!</h3>"
+	    . "<p>Nice to meet you! You have been listed as a parent/guardian of our newest member."
+	    . " If you haven't yet done so, please take time to <a href=\"{$websiteLink}\">visit our website</a>"
+	    . " and discover what exciting educational opportunities we offer to your child.</p>"
+	    . "<p>Your approval is required for your child to start using our service."
+	    . " <a href=\"{$tosLink}\">Click here</a> to read and agree to the Terms of Service.</p>";
+	
+	$email = new Email();
+	$email->setSubject('Welcome to Galaxy Learn - Time Machine');
+	$email->setHtmlBody($emailBody);
+	$email->addToRecipient($parentEmail);
+	
+	return $email->send();
 }
 
-function activate_user($uid) {
-	$UserService = new DataService('users');
-	$User = $UserService->service_get_one($uid);
-	$user = json_decode($User, true);
-	$user["authorized"] = "1";
-	$result = json_decode($UserService->service_update($uid, $user));
-	if ($user['email']) {
-		$email_values = array(
-				'message_html_body' => "You may now log into your account. <a href='" . $_SERVER['HTTP_HOST'] . APPLICATION_ROOT . "/sign-in.php'>Galaxy Learn</a>",
-				'message_subject' => "Welcome to GL Timemachine",
-				'message_recipients' => array(
-				    				array("email" => $user['email'])
-				    			)
-			);
-		send_email($email_values);
+/**
+ * Activate user account
+ * @param string $uid user id
+ * @throws Exception
+ */
+function activateUser($uid) 
+{
+    $userService = new DataService('users');
+	$user = $userService->service_get_one($uid);
+	
+	if (!$user) {
+	    throw new Exception('Could not find user account.');
 	}
-	return true;
+	
+	$userDecoded = json_decode($user, true);
+	$userDecoded['authorized'] = '1';
+	
+	$updated = json_decode(
+	    $userService->service_update($uid, $userDecoded)
+	);
+	
+	if (!$updated) {
+	    throw new Exception('Could not update user account.');
+	}
+	
+	// send confirmation email
+	$link = $_SERVER['HTTP_HOST'] . APP_WEB_ROOT . '/sign-in.php';
+	$htmlBody = "<h3>Welcome to Galaxy Learn - Time Machine!</h3>";
+	$htmlBody .= "<p>Your account has been activated! You may now log in."
+	    . " Go to <a href=\"$link\">Galaxy Learn</a></p>";
+	
+	$email = new Email();
+	$email->setSubject('Welcome to Galaxy Learn - Time Machine!');
+	$email->setHtmlBody($htmlBody);
+	$email->addToRecipient($userDecoded['email']);
+	$email->send();
 }
 
-function restrict() {
+function restrict() 
+{
 	if ($_SESSION['user_id'] == 0) {
 		header("Location: controlpanel.php");
 	}
 }
 
-function send_email($values) {
+function send_email($values) 
+{
 	$uri = "https://mandrillapp.com/api/1.0/messages/send.json?key=TfwBVbcI1N54lNqfsAEL6A";
 	$data = array (
 		"key" => "TfwBVbcI1N54lNqfsAEL6A",
