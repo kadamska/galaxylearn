@@ -58,8 +58,11 @@ if (!@file_exists($UploadDirectory)) {
     }
 
     //File Title will be used as new File name
-    $NewFileName = preg_replace(array('/s/', '/.[.]+/', '/[^w_.-]/'), array('_', '.', ''), strtolower($FileTitle));
-    $NewFileName = $NewFileName.'_'.$RandNumber.$ImageExt;
+    //$NewFileName = preg_replace(array('/s/', '/.[.]+/', '/[^w_.-]/'), array('_', '.', ''), strtolower($FileTitle));
+    //$NewFileName = $NewFileName.'_'.$RandNumber.$ImageExt;
+    
+   $NewFileName = $FileName.'_'.$RandNumber.$ImageExt;
+    
    //Rename and save uploded file to destination folder.
    if(move_uploaded_file($_FILES['uploadedFile']["tmp_name"], $UploadDirectory . $NewFileName ))
    {

@@ -4,16 +4,18 @@
 
 function MainCtrl($scope, $http, $location) {
     $http.get('data.php?type=eras').success(function(data) {
-            $scope.eras = data;
+        $scope.eras = data;
     });
 }
 
 function EraCtrl($scope, $routeParams, $http) {
     $http.get('data.php?type=stories&eraId='+ $routeParams.eraId).success(function(data) {
-        jQuery("html, body").animate({ scrollTop: jQuery('.era-loadview').offset().top }, 1000);
-        if (data.img == null) {
-            data.img = 'img/workbenchimage.png';
-        }
+        //jQuery("html, body").animate({ scrollTop: jQuery('.era-loadview').offset().top }, 1000);
+    	for (var i=0; i<data.length; i++) {
+    		if (!data[i].img.length) {
+    			data[i].img = 'img/workbenchimage.png';
+    		}
+    	}
         $scope.stories = data;
     });
 }
@@ -30,15 +32,17 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
     jQuery('#workbench-links').css('display','block');
     $http.get('data.php?type=story&storyId='+ $routeParams.storyId).success(function(data) {
 
+    	/*
         if(jQuery('.era-loadview').length){
             jQuery("html, body").animate({ scrollTop: jQuery('.era-loadview').offset().top }, 1000);
-        }
+        }*/
 
+    	/*
         if(jQuery('.editadventure').length){
             jQuery("html, body").animate({ scrollTop: jQuery('.editadventure').offset().top }, 1000);
         }        
-        
-        if (data.img == null) {
+        */
+        if (!data.img.length) {
             data.img = 'img/workbenchimage.png';
         } else {
             if(!jQuery('#cropthisimg').length){

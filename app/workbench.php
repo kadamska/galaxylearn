@@ -15,10 +15,13 @@ require "header.php";
         		<ul style="list-style-type:none;" ng-controller="AdminReviewCtrl">
         			<li class="span4" ng-repeat="story in stories">
         				<div class="thumbnail">
+        				{{story.screen_name}}
         					<a href="controlpanel.php#/story/{{story._id.$oid}}" >{{story.title}}<img src="{{story.img}}" ></a><br/>
-        					<a href="#/story/edit/{{story._id.$oid}}">[Edit]</a> - <a href="data.php?type=rejectStory&id={{story._id.$oid}}">[Delete]</a>
+        					<a href="#/story/edit/{{story._id.$oid}}" class="btn btn-large btn-primary">Edit</a>
+        					<a href="data.php?type=rejectStory&id={{story._id.$oid}}" class="btn btn-large btn-primary">Delete</a>
         				</div>
         			</li>
+        			<li ng-show="!stories.length">No stories ready for review.</li>
         		</ul>
         		<div class="clearfix"></div>
         		<hr>

@@ -57,7 +57,7 @@ if ($_REQUEST['type'] == "newstory") {
 	$DataService = new DataService('stories');
 	if (!$_SESSION['admin']) {
 		$data =	array (
-			"user" => $_SESSION['user_id'], // if is admin, doesn't change this.
+			"user" => $_SESSION['user_id'],
 			"username" => $_SESSION['screenName'],
 			"era_id" =>  $input['era_id'], 
 			"title" =>  $input['title'], 
@@ -67,9 +67,10 @@ if ($_REQUEST['type'] == "newstory") {
 			"allages" =>  $input['allages'],
 			"age" =>  $input['age']);
 	} else {
+	    // admin editing the story - don't change the author fields
 		$data =	array (
-			"user" => $_SESSION['user_id'], 
-			"username" => $_SESSION['screenName'],
+			//"user" => $_SESSION['user_id'], 
+			//"username" => $_SESSION['screenName'],
 			"era_id" =>  $input['era_id'], 
 			"title" =>  $input['title'], 
 			"img" =>  $input['img'],

@@ -607,33 +607,48 @@ body pre.content-preview{
 
 .skyblue-line{
   border-bottom:4px solid #95cddc;  
-  margin:10px 0;
+  margin:10px;
 }
 
-#pickera{
-  margin:25px 0;
+#pickera {
+  margin: 25px 0px;
+  padding-bottom: 25px;
+  height: 205px;
 }
 
-  #pickera li{
-    float:left; display:block;
-    border:1px solid #3503c7;
-    border-radius:15px;
-    padding:15px 10px;
-    text-align:center;
-    height:230px;
-    margin:0;
-  }
+#pickera li {
+  float: left; 
+  display: block;
+  border: 1px solid #3503c7;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  height: 205px;
+  width: 112px;
+  margin: 0;
+}
 
-    #pickera li a{
-      text-align:center;
-      color:#fff;
-    }
+#pickera li a {
+  text-align:center;
+  color:#fff;
+}
 
-    #pickera li a p{
-      display:block;
-      text-align:center;
-      width:110px;
-    }
+#pickera li a img {
+	padding-bottom: 5px;
+}
+
+#pickera .era-name {
+	display: block;
+	height: 50px;
+}
+
+#pickera .era-times {
+	display: block;
+}
+
+div.era-loadview {
+	padding-top: 10px;
+}
 
 #aboutPage p{
   font-size:20px;
@@ -695,7 +710,7 @@ body pre.content-preview{
 body .nav > li > a {
   color:#64cbe5;
   font-size:24px;
-  padding:15px;
+  padding:25px;
 }
 
 body .nav > li > a:hover{

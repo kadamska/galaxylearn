@@ -1,7 +1,8 @@
-<ul class="thumbnails" id="goHere" ng-controller="EraCtrl">
+<ul ng-show="stories.length" class="thumbnails" id="goHere" >
     <li class="span4" ng-repeat="story in stories">
-    <div class="thumbnail">
-    	<a href="#/story/{{story._id.$oid}}" class="thumbnail" >{{story.title}}<img class="" src="{{story.img}}" ></a>
-    </div>
+	    <div class="thumbnail">
+	    	<a href="#/story/{{story._id.$oid}}" class="thumbnail" >{{story.title}}<img src="{{story.img}}" ></a>
+	    </div>
     </li>
 </ul>
+<div ng-show="!stories.length">No stories for this era yet.</div>
