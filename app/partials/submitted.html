@@ -1,8 +1,8 @@
-
-<ul class="thumbnails" ng-controller="SubmittedCtrl">
+<ul class="thumbnails">
     <li class="span4" ng-repeat="story in stories">
-    <div class="thumbnail">
-    	<a href="#/story/{{story._id.$oid}}" class="thumbnail" >{{story.title}}<img class="img-polaroid" src="{{story.img}}" ></a>
-    </div>
+	    <div class="thumbnail">
+	    	<a href="#/story/{{story._id.$oid}}" class="thumbnail" >{{story.title}}<img class="img-polaroid" src="{{story.img}}" ></a>
+	    </div>
     </li>
+    <li ng-show="!stories.length">No stories submitted.</li>
 </ul>

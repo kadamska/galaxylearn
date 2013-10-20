@@ -121,15 +121,21 @@ function send_parent_email($user_id, $parentEmail)
 	$tosLink = $_SERVER["HTTP_HOST"] . APP_WEB_ROOT. "/terms.php?uid=" . $user_id;
 	$websiteLink = $_SERVER["HTTP_HOST"] . APP_WEB_ROOT . "/index.php";
 	
-	$emailBody = "<h3>Welcome to Galaxy Learn - Time Machine!</h3>"
-	    . "<p>Nice to meet you! You have been listed as a parent/guardian of our newest member."
-	    . " If you haven't yet done so, please take time to <a href=\"{$websiteLink}\">visit our website</a>"
-	    . " and discover what exciting educational opportunities we offer to your child.</p>"
+	$emailBody = "<h3>Welcome to Galaxy Learn's Time Machine!</h3>"
+	    . "<p>Your child or student has applied to be a crewmember in the Time"
+	    . " Machine. He or she will be able to write, add images, research"
+	    . " history and collaborate with other student crewmembers on the site."
+	    . " No student will have any direct email or online contact with another"
+	    . " student or adult, and all work submitted will be reviewed by their"
+	    . " teacher and the Time Machine staff.</p>"
+	    . "<p>You may visit our main website to find out more about"
+	    . " <a href=\"www.galaxylearn.com\">Galaxy Learn</a> and"
+	    . " the <a href=\"{$websiteLink}\">Time Machine</a> historical simulator."
 	    . "<p>Your approval is required for your child to start using our service."
 	    . " <a href=\"{$tosLink}\">Click here</a> to read and agree to the Terms of Service.</p>";
 	
 	$email = new Email();
-	$email->setSubject('Welcome to Galaxy Learn - Time Machine');
+	$email->setSubject("Welcome to Galaxy Learn's Time Machine!");
 	$email->setHtmlBody($emailBody);
 	$email->addToRecipient($parentEmail);
 	

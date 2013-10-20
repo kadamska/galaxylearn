@@ -4,6 +4,31 @@ body, body p{
   font-size:18px;
 }
 
+#toc {
+	background-color: #fff;
+	color: #000;
+	padding: 10px;
+	line-height: 1.2;
+}
+
+#toc p, #toc ul li {
+	font-size: 12px;
+}
+
+.toc-section {
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.toc-main-section {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
