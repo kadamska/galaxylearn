@@ -1,7 +1,7 @@
 <div class="editadventure" ng-controller="StoryCtrl">
 	
 		<div class="span12">
-			<h2>Edit Story</h2>
+			<h2>Edit Adventure</h2>
 			<div class="row">
 				<div class="span12">
 					<form no-validate name="StoryEdit" class="simple-form">
@@ -42,13 +42,15 @@
 					    <div id="dropbox" class="dropbox" ng-class="dropClass"><span>{{dropText}}</span></div>
 					    <div ng-show="files.length">
 					        <div ng-repeat="file in files.slice(0)">
+					            <p>
 					            <span>{{file.webkitRelativePath || file.name}}</span>
-					            (<span ng-switch="file.size > 1024*1024">
-					                <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
-					                <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
-					            </span>)
+					            <span ng-switch="file.size > 1024*1024">
+					               <span ng-switch-when="true">({{file.size / 1024 / 1024 | number:2}} MB)</span>
+					               <span ng-switch-default>({{file.size / 1024 | number:2}} kB)</span>
+					            </span>
+					            </p>
 					        </div>
-					        <input type="button" ng-click="uploadFile()" value="Upload" />
+					        <input class="btn btn-primary btn-large" type="button" ng-click="uploadFile()" value="Upload" style="margin: 10px" />
 					        <div ng-show="progressVisible">
 					            <div class="percent">{{progress}}%</div>
 					            <div class="progress-bar">
@@ -57,9 +59,7 @@
 					        </div>
 					    </div>
 					    <div id="cropthis">
-					    	<div id="image_crop">
-
-					    	</div>
+					    	<div id="image_crop"></div>
 					    	<!--
 					    	<form action="uploads/crop.php" method="post">
 						    	<input type="text" id="image_path" name="image_path" />

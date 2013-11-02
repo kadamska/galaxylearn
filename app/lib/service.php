@@ -41,6 +41,7 @@ class DataService
         $query = "&q=" . json_encode($query);
         $path = $this->URL . $this->database . $this->collection . $this->key  . $query;
         $path .= "&s={'id':1}";    
+        
         error_log("MongoLab call - get all - " . $path);
         
         $ch = curl_init($path);

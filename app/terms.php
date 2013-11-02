@@ -78,8 +78,7 @@ consent by a legal parent or guardian and have the
 authority to enter into the terms herein. In addition, 
 those who wish to register and participate must 
 meet the minimum requirements laid out in the 
-Terms of Use (this document) and abide by the
-Honor Code herein. In addition, certain Workshops 
+Terms of Use (this document). In addition, certain Workshops 
 may have additional eligibility requirements, as 
 specified on the Workshop website. If you do not 
 qualify or do not agree to these terms, you may not 
@@ -377,8 +376,8 @@ be effective immediately upon posting on our Site.</p>
 				the end date of the course. This coupon will only be valid for a
 				future offering of the exact same course. However, please be aware
 				that Galaxy Learn cannot provide guarantees for class repeat
-				schedules. If you are found to be in violation of Galaxy Learn's
-				Honor Code and academic integrity policies or Terms of Service, you
+				schedules. If you are found to be in violation of academic 
+				integrity policies or Terms of Service, you
 				will not be issued a refund or coupon. 
 				
 <div class="toc-section">NOTICE FOR CALIFORNIA USERS</div>

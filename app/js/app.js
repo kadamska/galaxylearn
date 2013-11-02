@@ -202,97 +202,99 @@ var wbapp2 = angular.module('wbApp2', ["ngUpload"]).
 FileUploadCtrl.$inject = ['$scope'];
 
 function FileUploadCtrl(scope) {
-    //============== DRAG & DROP =============
+	var placeholderBefore = 'Drag and drop an image';
+	var placeholderAfter = 'Drag and drop to replace image';
+	//============== DRAG & DROP =============
     // source for drag&drop: http://www.webappers.com/2011/09/28/drag-drop-file-upload-with-html5-javascript/
-    var dropbox = document.getElementById("dropbox")
-    scope.dropText = "Drag and drop an image"
-
+    var dropbox = document.getElementById("dropbox");
+    scope.dropText = placeholderBefore;
     // init event handlers
     function dragEnterLeave(evt) {
-        evt.stopPropagation()
-        evt.preventDefault()
+        evt.stopPropagation();
+        evt.preventDefault();
         scope.$apply(function(){
-            scope.dropText = "Drag 'n Drop the Image"
-            scope.dropClass = ''
-        })
+            scope.dropText = placeholderBefore;
+            scope.dropClass = '';
+        });
     }
-    dropbox.addEventListener("dragenter", dragEnterLeave, false)
-    dropbox.addEventListener("dragleave", dragEnterLeave, false)
+    dropbox.addEventListener("dragenter", dragEnterLeave, false);
+    dropbox.addEventListener("dragleave", dragEnterLeave, false);
     dropbox.addEventListener("dragover", function(evt) {
-        evt.stopPropagation()
-        evt.preventDefault()
-        var clazz = 'not-available'
-        var ok = evt.dataTransfer && evt.dataTransfer.types && evt.dataTransfer.types.indexOf('Files') >= 0
+        evt.stopPropagation();
+        evt.preventDefault();
+        var ok = (evt.dataTransfer && evt.dataTransfer.types);
         scope.$apply(function(){
-            scope.dropText = ok ? "Drag 'n Drop the Image" : 'Only files are allowed!'
-            scope.dropClass = ok ? 'over' : 'not-available'
+            scope.dropText = (ok ? placeholderBefore : 'Only files are allowed!');
+            scope.dropClass = (ok ? 'over' : 'not-available');
         })
-    }, false)
+    }, false);
     dropbox.addEventListener("drop", function(evt) {
         //console.log('drop evt:', JSON.parse(JSON.stringify(evt.dataTransfer)))
-        evt.stopPropagation()
-        evt.preventDefault()
+        evt.stopPropagation();
+        evt.preventDefault();
         scope.$apply(function(){
-            scope.dropText = "Drag 'n Drop the Image"
-            scope.dropClass = ''
-        })
-        var files = evt.dataTransfer.files
+            scope.dropText = placeholderAfter;
+            scope.dropClass = '';
+        });
+        var files = evt.dataTransfer.files;
         if (files.length > 0) {
             scope.$apply(function(){
-                scope.files = []
+                scope.files = [];
                 for (var i = 0; i < files.length; i++) {
-                    scope.files.push(files[i])
+                    scope.files.push(files[i]);
                 }
-            })
+            });
         }
-    }, false)
+    }, false);
     //============== DRAG & DROP =============
 
     scope.setFiles = function(element) {
-    scope.$apply(function(scope) {
-      console.log('files:', element.files);
-      // Turn the FileList object into an Array
-        scope.files = []
-        for (var i = 0; i < element.files.length; i++) {
-          scope.files.push(element.files[i])
-        }
-      scope.progressVisible = false
-      });
+	    scope.$apply(function(scope) {
+	      //console.log('files:', element.files);
+	        // Turn the FileList object into an Array
+	        scope.files = [];
+	        for (var i = 0; i < element.files.length; i++) {
+	          scope.files.push(element.files[i]);
+	        }
+	        scope.progressVisible = false;
+	      });
     };
 
     scope.uploadFile = function() {
-        var fd = new FormData()
-        for (var i in scope.files) {
-            fd.append("uploadedFile", scope.files[i])
+        var fd = new FormData();
+        for (var i = 0; i < scope.files.length; i++) {
+            fd.append("uploadedFile", scope.files[i]);
         }
-        var xhr = new XMLHttpRequest()
-        xhr.upload.addEventListener("progress", uploadProgress, false)
-        xhr.addEventListener("load", uploadComplete, false)
-        xhr.addEventListener("error", uploadFailed, false)
-        xhr.addEventListener("abort", uploadCanceled, false)
-        xhr.open("POST", "uploads/")
-        scope.progressVisible = true
-        xhr.send(fd)
+        var xhr = new XMLHttpRequest();
+        xhr.upload.addEventListener("progress", uploadProgress, false);
+        xhr.addEventListener("load", uploadComplete, false);
+        xhr.addEventListener("error", uploadFailed, false);
+        xhr.addEventListener("abort", uploadCanceled, false);
+        xhr.open("POST", "uploads/");
+        scope.progressVisible = true;
+        xhr.send(fd);
     }
 
     function uploadProgress(evt) {
         scope.$apply(function(){
-            if (evt.lengthComputable) {
-                scope.progress = Math.round(evt.loaded * 100 / evt.total)
+            if (evt.lengthComputable && evt.total > 0) {
+                scope.progress = Math.round(evt.loaded * 100 / evt.total);
             } else {
-                scope.progress = 'unable to compute'
+                scope.progress = 'unable to compute';
             }
         })
     }
 
     function uploadComplete(evt) {
-        /* This event is raised when the server send back a response */
-
+    	/* This event is raised when the server send back a response */
         var image = JSON.parse(evt.target.responseText);
-
         $('#image_crop').empty().append('<img src="'+ image.path +'" id="cropthisimg" />');
         //$('.img-preview').empty().append('<img src="'+ image.path +'" id="cropthisimg-preview" />');
         $('input[name="img"]').val(image.path);
+        scope.$apply(function(){
+        	scope.progress = 100;
+            scope.progressVisible = false;
+        })
         /*
         $("#image_path").val(image.path);
         $("#oring_w").val(image.width);
@@ -327,20 +329,15 @@ function FileUploadCtrl(scope) {
     }
 
     function uploadFailed(evt) {
-        alert("There was an error attempting to upload the file.")
+        alert("There was an error attempting to upload the file.");
     }
 
     function uploadCanceled(evt) {
         scope.$apply(function(){
-            scope.progressVisible = false
-        })
-        alert("The upload has been canceled by the user or the browser dropped the connection.")
+            scope.progressVisible = false;
+        });
+        alert("The upload has been canceled by the user or the browser dropped the connection.");
     }
 }
 
 // Cropping Image
-
-
-
-
-

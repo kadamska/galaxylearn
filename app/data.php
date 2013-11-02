@@ -35,7 +35,7 @@ if ($_REQUEST['type'] == "user_stories_drafts") {
 
 if ($_REQUEST['type'] == "user_stories_submitted") {
 	$DataService = new DataService('stories');
-	$params = array("status" => 1);
+	$params = array("status" => array('$in' => array(1, 2)));
 	if ($_SESSION['user_id'] != 0) {
 	 	$params["user"] = $_SESSION['user_id'];
 	}
@@ -147,7 +147,7 @@ if ($_REQUEST['type'] == "rejectStory") {
 	$user = $UserService->service_get_one($array['user']);
 	$user = json_decode($user, TRUE);
 	$email_values = array(
-				'message_html_body' => "Your Adventure was not accepted by the Time Machine. Please review Terms of Service and try again. Thanks!",
+				'message_html_body' => "Your adventure was not accepted by the Time Machine. Please review Terms of Service and try again. Thanks!",
 				'message_subject' => "Time Machine Submission Rejected",
 				'message_recipients' => array(
 				    				array("email" => $user['email'])

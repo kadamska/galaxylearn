@@ -85,10 +85,10 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
                 'id': $scope.story._id.$oid},
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                alert("Your story has been saved. 1");
+                alert("Your adventure has been saved. 1");
                 window.location.href='workbench.php';
             }).error(function (response) {
-                alert("There was a problem saving your story. Please try again later. 1");
+                alert("There was a problem saving your adventure. Please try again later. 1");
         });
     } */
 
@@ -108,10 +108,10 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
                 'id': $scope.story._id.$oid},
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                alert("Your story has been submitted.");
+                alert("Your adventure has been submitted.");
                 window.location.href='workbench.php';
             }).error(function (response) {
-                alert("There was a problem submitting your story. Please try again later.");
+                alert("There was a problem submitting your adventure. Please try again later.");
             });
         }
 
@@ -127,9 +127,11 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
             jQuery('.deletebutton').show();
         }
 
-        $scope.story.visible = "none";
-        if (data.user_id == $scope.story.user && $scope.story.status == 0) {
-            $scope.story.visible = "visible";
+        if ($scope.story) {
+	        $scope.story.visible = "none";
+	        if (data.user_id == $scope.story.user && $scope.story.status == 0) {
+	            $scope.story.visible = "visible";
+	        }
         }
     });
 
@@ -158,10 +160,10 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
             },
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                alert("Your story has been saved.");
+                alert("Your adventure has been saved.");
                 window.location.href='workbench.php';
             }).error(function (response) {
-                alert("There was a problem saving your story. Please try again later.");
+                alert("There was a problem saving your adventure. Please try again later.");
                 alert(age);
             });
     };
@@ -171,12 +173,13 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
         clearInterval(startSaving);
     });    
 
+    /*
     // Upload Controller
     jQuery("#my-awesome-dropzone").dropzone({ 
         url: "uploads/",
         maxFilesize: 3        
     });    
-        
+      */  
 }
 
 
@@ -205,10 +208,10 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
             },
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                alert("Your story has been submitted.");
+                alert("Your adventure has been submitted.");
                 window.location.href='workbench.php';
             }).error(function (response) {
-                alert("There was a problem submitting your story. Please try again later.");
+                alert("There was a problem submitting your adventure. Please try again later.");
             });
     }
 
@@ -231,10 +234,10 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
             },
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (response) {
-                alert("Your story has been saved.");
+                alert("Your adventure has been saved.");
                 window.location.href='workbench.php';
             }).error(function (response) {
-                alert("There was a problem saving your story. Please try again later.");
+                alert("There was a problem saving your adventure. Please try again later.");
                 alert(age);
             });
     };
@@ -260,7 +263,7 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
                 jQuery('form[name=StoryEdit] input[name=id]').val(response._id.$oid);
                 //jQuery('form[name=StoryEdit] #previewButton').attr('href', '#/story/'+response._id.$oid).removeClass('disabled');
             }).error(function (response) {
-                //console.log("There was a problem autosaving your story. Please try again later.");
+                //console.log("There was a problem autosaving your adventure. Please try again later.");
             });
     };    
 
@@ -277,13 +280,13 @@ function StoryNewCtrl ($scope, $routeParams, $http, $location) {
         //console.log('canceling interval..');
         clearInterval(startSaving);
     });    
-
+/*
     // Upload Controller
     jQuery("#my-awesome-dropzone").dropzone({ 
         url: "uploads/",
         maxFilesize: 3        
     });
-
+*/
 }
 
 function DraftsCtrl($scope, $routeParams, $http) {

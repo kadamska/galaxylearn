@@ -21,7 +21,7 @@ require "header.php";
         					<a href="data.php?type=rejectStory&id={{story._id.$oid}}" class="btn btn-large btn-primary">Delete</a>
         				</div>
         			</li>
-        			<li ng-show="!stories.length">No stories ready for review.</li>
+        			<li ng-show="!stories.length">No adventures ready for review.</li>
         		</ul>
         		<div class="clearfix"></div>
         		<hr>
@@ -30,6 +30,7 @@ require "header.php";
         	  	</div>
         	</div>
         </div>
+    </div>
 <?php
 	} else {
     // show non-admin options
@@ -49,6 +50,7 @@ require "header.php";
     		  	</div>
     		</div>
         </div>
+    </div>
 <?php
 	}
 require "footer.php";

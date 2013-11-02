@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Time Machine - Go Somewhen</title>
-  <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
   <script src="js/bootstrap.min.js"></script>
 </head>
 <?php 

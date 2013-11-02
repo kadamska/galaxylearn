@@ -169,12 +169,12 @@ function activateUser($uid)
 	
 	// send confirmation email
 	$link = $_SERVER['HTTP_HOST'] . APP_WEB_ROOT . '/sign-in.php';
-	$htmlBody = "<h3>Welcome to Galaxy Learn - Time Machine!</h3>";
+	$htmlBody = "<h3>Welcome to Galaxy Learn's Time Machine!</h3>";
 	$htmlBody .= "<p>Your account has been activated! You may now log in."
 	    . " Go to <a href=\"$link\">Galaxy Learn</a></p>";
 	
 	$email = new Email();
-	$email->setSubject('Welcome to Galaxy Learn - Time Machine!');
+	$email->setSubject("Welcome to Galaxy Learn's Time Machine!");
 	$email->setHtmlBody($htmlBody);
 	$email->addToRecipient($userDecoded['email']);
 	$email->send();

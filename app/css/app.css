@@ -498,21 +498,23 @@ p.homepage-text {
     position: absolute; width: 300px; height: 14px; z-index: 1; text-align: center; font-size: 0.8em; color: white;
 }
 .progress-bar {
-    width: 300px; height: 14px;
-    border-radius: 10px;
-    border: 1px solid #CCC;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#6666cc), to(#4b4b95));
-    border-image: initial;
+    width: 300px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
 }
 .uploaded {
     padding: 0;
-    height: 14px;
-    border-radius: 10px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
-    border-image: initial;
+    height: 18px;
+    border-radius: 6px;
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .dropbox {
-    width: 360px;
+    width: 470px;
     height: 3em;
     border: 2px solid #DDD;
     border-radius: 8px;
@@ -523,8 +525,9 @@ p.homepage-text {
     font-family: Arial, sans-serif;
 }
 .dropbox span {
-    margin-top: 0.9em;
+    margin-top: 0.8em;
     display: block;
+    line-height: 1;
 }
 .dropbox.not-available {
     background-color: #F88;
@@ -795,3 +798,7 @@ body #mainnav.nav > li{
 .jcrop-dark .jcrop-handle{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#FFF;border-color:#000;border-radius:3px;}
 .solid-line .jcrop-vline,.solid-line .jcrop-hline{background:#FFF;}
 .jcrop-holder img,img.jcrop-preview{max-width:none;}
+
+a, a:hover, a:focus, a:active {
+    color: #FFFFFF;
+}
