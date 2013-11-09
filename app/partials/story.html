@@ -3,30 +3,33 @@
 		<div class="span12" id="readStory">
 			<h2>{{story.title}}</h2>
 			<h5>By: {{story.username}}</h5>
+			<h5>
+				Appropriate for 
+				<span ng-show="story.allages">all ages</span>
+				<span ng-show="story.age">
+					ages
+					<span ng-show="story.age=='ageOne'">7-10</span>
+					<span ng-show="story.age=='ageTwo'">11-14</span>
+					<span ng-show="story.age=='ageThree'">14 and up</span>
+				</span>
+			</h5>
 			<div class="deletebutton">
 				<a id="deleteStory" href="data.php?type=deleteStory&id={{story._id.$oid}}" class="btn btn-danger">Delete</a>
-			</div>				
+			</div>
 			<div class="row">
-				<div class="span3" ngshow="story.img.length">
+				<div class="span3" ng-show="story.img.length">
 					<img width="200" src="{{story.img}}" class="media-object pull-left">
 				</div>
-				
 				<div class="span9">
-					<div style="{{visible}}">
-						<div class="admin">
-
-							<h4>Admin Controls:</h4>
-					   [ <a href="data.php?type=acceptStory&id={{story._id.$oid}}">Approve</a> | <a href="data.php?type=rejectStory&id={{story._id.$oid}}">Reject</a> ]
-							</ul>
-
-						</div>
+					<div class="admin" ng-show="visibleBool">
+						<h4>Admin Controls:</h4>
+						[ <a href="data.php?type=acceptStory&id={{story._id.$oid}}">Approve</a>
+						| <a href="data.php?type=rejectStory&id={{story._id.$oid}}">Reject</a> ]
 					</div>
-					
 					<p ng-bind-html-unsafe="story.body | nl2br"></p>
 					<!--<button style="{{visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
-						<!--<button style="display:{{story.visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
+					<!--<button style="display:{{story.visible}}" class="btn-large btn-primary pull-right" ng-click="submitForReview()">Submit for Review</button>-->
 				</div>
-
 			</div>
 		</div>
 	</div>

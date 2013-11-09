@@ -117,10 +117,12 @@ function StoryCtrl($scope, $routeParams, $http, $location) {
 
     $http.get('data.php?type=authenticated').success(function(data) {
         if (data.admin == '1' && $scope.story.status == 1) {
-            $scope.visible = "display:visible;";            
+            $scope.visible = "display:visible;";
+            $scope.visibleBool = true;
         }
         else {
             $scope.visible = "display:none;";
+            $scope.visibleBool = false;
         }
 
         if (data.admin == '1'){
