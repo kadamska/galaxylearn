@@ -40,11 +40,15 @@
   	</div>	
   </div>
   <div class="row home-main-title">
-    <div class="span12" style="margin-top:45px; margin-bottom: 10px;">
-       <h1 style="font-size:90px; font-family: 'Comic Sans MS', cursive, sans-serif; text-align: center;" >
-          <a href="<?php echo 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']); ?>/controlpanel.php" style="color:#fff; text-decoration:none; ">Time Machine</a>
+    <div class="span12" style="margin-top:20px; margin-bottom: 5px;">
+       <h1 style="text-align: center;">
+          <a href="<?php echo 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']); ?>/controlpanel.php" style="color:#fff; text-decoration:none; ">
+              <img src="img/tm-logo.png">
+          </a>
        </h1>
        <br>
-       <h2 class="home-subtitle pull-right">Go somewhen</h2>
+       <h2 class="home-subtitle pull-right">
+           <img src="img/go-somewhen.png">
+       </h2>
       </div>
   </div>
